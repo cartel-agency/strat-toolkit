@@ -31,7 +31,7 @@ moeten toevoegen.
 4. Plak deze repo:
 
    ```
-   tomasmoesen/cartel-strategy
+   tomasmoesen/strat-toolkit
    ```
 
 5. Zodra de marketplace is toegevoegd, klik **Install** bij de plugin **Root Analyst**.
