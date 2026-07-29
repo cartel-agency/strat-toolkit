@@ -47,9 +47,11 @@ Werk feitelijk. Tel en benoem, in plaats van te oordelen.
 
 Let bijzonder op twee dingen die uit de voorbeeldrapporten naar voren komen:
 
-- **Bouwstenen die je oversloeg.** Kwamen SWOT, SEMrush, Meta Ad Library, concurrentiecampagnes,
-  reviews, social listening of internationale precedenten wél in het rapport van de strateeg voor,
-  maar niet in het jouwe? Dat is een concreet, herstelbaar gat.
+- **Bouwstenen die je oversloeg.** Kwamen SWOT, Meta Ad Library, concurrentiecampagnes, reviews,
+  social listening, nieuwsanalyse uit de pers of internationale precedenten wél in het rapport van
+  de strateeg voor, maar niet in het jouwe? Dat is een concreet, herstelbaar gat. Bouwstenen die
+  enkel uit betalende bronnen konden komen (SEMrush, WARC, NIQ) tellen hier niet mee: die kon je
+  niet bereiken, en dat is geen gat maar een grens.
 - **Koppen.** Zijn jouw koppen labels gebleven waar de strateeg er bevindingen van maakte? Dan is het
   een vormprobleem, geen inhoudsprobleem.
 

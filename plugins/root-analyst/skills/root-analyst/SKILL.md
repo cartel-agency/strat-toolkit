@@ -9,7 +9,7 @@ description: >
   research nodig heeft als vertrekpunt. Gebruik de terugkoppel-stand wanneer een afgewerkt
   research-rapport in Notion staat en de skill daaruit moet leren. NIET voor het schrijven van
   de strategie, het inzicht of de creatieve briefing.
-versie: v2 · Chat & Cowork · drie gates · research levert materiaal, de strateeg levert betekenis
+versie: v2.1 · Chat & Cowork · drie gates · research levert materiaal, de strateeg levert betekenis · bronroutering op bereikbaarheid en gezag
 ---
 
 # Root Analyst v2
@@ -107,6 +107,10 @@ herwerken.
 1. De **briefing / klantvraag** (client brief of ingevuld door de accountmanager).
 2. De **beslissing** die deze fase moet opleveren.
 3. **Interne context** uit Notion: kennisbank, eerdere cases, merkfundament van de klant.
+4. **Aangeleverd betaald materiaal**, als dat er is: WARC-cases, SEMrush-exports, NIQ- of
+   GfK-rapporten, persdatabank-artikels, interne verkoopdata. Noem dit één keer, in dezelfde
+   zin waarin je de rest opvraagt. Geen aparte vraag, geen wachtmoment. Is het er niet, dan
+   werk je gewoon verder: het rapport moet ook zonder deze input volledig zijn.
 
 Ontbreekt de beslissing of de context? Stel **maximaal twee gerichte vragen** vóór je begint.
 
@@ -140,7 +144,12 @@ Lever:
 2. **Wat opvalt aan het landschap:** waar zit veel materiaal, waar zit weinig, welke bronnen blijken
    gezaghebbend, welke sporen lopen dood.
 3. **Voorstel voor de diepgang:** waar wil je diep graven, wat laat je vallen, en waarom.
-4. **Openstaande vragen** waar je de strateeg voor nodig hebt (interne data, klantcontact, eigen kennis).
+4. **Openstaande vragen** waar je de strateeg voor nodig hebt: interne data, klantcontact, eigen
+   kennis, en materiaal dat jij niet kan bereiken. Vraag hier enkel naar als je er in het
+   vooronderzoek echt tegenaan liep, en wees concreet over wat ontbreekt. Dus niet *"heb je nog
+   bronnen"*, maar bijvoorbeeld: *"over de omzetontwikkeling van Belgische tuincentra vind ik
+   publiek niets recenter dan 2022, heb jij daar iets over?"* Komt er geen antwoord, dan ga je
+   door en benoem je het als gap. Dit is een aanbod, geen voorwaarde.
 
 Sluit af met een expliciete keuze-uitnodiging: *"Wil je dat ik zo doorga, of stuur je bij? Bijvoorbeeld:
 zwaarder op Markt, Maatschappij lichter, of een extra vraag toevoegen."* **Wacht op akkoord.**
@@ -154,24 +163,88 @@ Geen documenten in deze gate. Platte tekst in de chat volstaat.
 Pas na akkoord op gate 2. Onderzoek in deze volgorde en bouw het verhaal op:
 **Maatschappij → Markt → Mens → Merk.**
 
-| Pijler | Wat je zoekt | Bron (routering) |
+| Pijler | Wat je zoekt | Waar je zelf zoekt |
 |---|---|---|
-| **Maatschappij** | Macrotrends, cultural moments, spanningsvelden | WebSearch · trendrapporten · Google Trends · nieuws |
-| **Markt** | Concurrentie, share of voice/search, categorie, cases | WebSearch · Nielsen · SEMrush · WARC · competitor audit |
-| **Mens** | Doelgroep, jobs-to-be-done, drempels & drivers, mediagedrag | WebSearch · social listening (Reddit, reviews, forums) · aangeleverde interviews |
-| **Merk** | Performance, positionering, distinctive assets, verleden | Notion (kennisbank/klant) · website · past campaigns · klantdata |
+| **Maatschappij** | Macrotrends, cultural moments, spanningsvelden, hoe mensen over het thema praten | VRT NWS · MO* · BRUZZ · Apache · De Correspondent · The Conversation · Monocle · RTBF · La Libre · Statbel · Statistiek Vlaanderen · Google Trends · trendrapporten |
+| **Markt** | Concurrentie, categorie, prijs, distributie, cases | RetailDetail · Trends · Data News · VILT · sectorfederaties · Comeos · jaarrekeningen via de Balanscentrale van de NBB · persberichten en investor relations van concurrenten · eigen prijs- en assortimentsobservatie op webshops van concurrenten · Meta Ad Library |
+| **Mens** | Doelgroep, jobs-to-be-done, drempels en drivers, mediagedrag | VRT NWS · Knack Weekend · BRUZZ · The Conversation · Statbel huishoudbudgetonderzoek · Digimeter · reviews en fora · aangeleverde interviews |
+| **Merk** | Performance, positionering, distinctive assets, verleden | Notion (kennisbank/klant) · website · past campaigns · klantdata · Meta Ad Library |
+
+**Wat de strateeg aanlevert, en wat je dus niet zelf gaat zoeken:** WARC-cases, SEMrush-exports,
+NIQ- en GfK-rapporten, betaalde trendrapporten, interne verkoop- en klantdata. Deze bronnen zijn
+niet publiek bereikbaar. Zoek er niet naar. Is het niet aangeleverd, dan bestaat het voor dit
+onderzoek niet, en dat is geen probleem: het rapport moet zonder deze bronnen volledig zijn.
+
+**Niet bereikbaar, ook niet onrechtstreeks:** De Standaard, Het Nieuwsblad, Het Laatste Nieuws,
+De Morgen, De Tijd, Gazet van Antwerpen, Het Belang van Limburg, Le Soir, NRC, De Volkskrant,
+The Economist, The New Yorker, The New York Times, The Guardian, Financial Times, Wired, BBC,
+The Atlantic. Kom je in een tekst een verwijzing naar zo'n artikel tegen, neem die dan niet over
+als bron. Zoek het oorspronkelijke onderzoek, of benoem het als gap.
+
+**Hoe je bronnen weegt**
+
+Niet elke bron weegt even zwaar. Vier niveaus:
+
+- **A, hardste grond:** overheidsstatistiek en officiële instanties (Statbel, Statistiek Vlaanderen,
+  BISA, Nationale Bank), sectorfederaties, VLAM, peer-reviewed onderzoek, jaarrekeningen.
+- **B, gezaghebbende journalistiek:** openbare omroep en landelijke kwaliteitstitels (VRT NWS, RTBF,
+  La Libre, Knack, Trends, MO*).
+- **C, vakpers:** gezaghebbend binnen het eigen domein, niet daarbuiten (RetailDetail, VILT, Data
+  News, sectorbladen).
+- **D, regionaal, niche of opiniërend:** bruikbaar als illustratie of als lokaal signaal, niet als
+  bewijs voor een landelijke uitspraak (BRUZZ, L'Avenir, Apache, expertblogs).
+
+**Een algemene of landelijke bevinding mag nooit uitsluitend op een bron van niveau D rusten.** Vind
+je zo'n uitspraak enkel daar, zet ze dan bij de openstaande vragen in plaats van bij de bevindingen.
+Gaat het wél om een lokaal of illustratief gegeven, en is dat voor deze opdracht relevant, dan mag
+een D-bron er alleen voor staan. Schrijf er dan bij dat het om één bron gaat en waar die vandaan komt.
+
+De titels zijn voorbeelden. Staat een bron er niet bij, schat het niveau dan in op hetzelfde
+principe: hoe dicht zit de bron bij de meting zelf.
 
 **Bronregels**
 
-- Primaire en gezaghebbende bronnen eerst (Statbel, Nielsen, WARC, sectorfederaties, bedrijfsbronnen).
-- **Nooit SEO-contentfarms.**
-- Stuur actief op recentheid: voeg "laatste 6-12 maanden" toe en **controleer de publicatiedatum**.
-  Vertrouw nooit op trainingskennis voor actuele feiten.
+- **Primaire bron boven berichtgeving erover.** Vind je een cijfer in een artikel, zoek dan de studie,
+  het instituut of de federatie erachter en citeer die. Lukt dat niet, vermeld dan beide: het cijfer,
+  wie het gemeten heeft, en via welk artikel je het vond.
+- **Twee klokken voor veroudering.** *Feiten en cijfers* beschrijven een toestand (marktaandelen,
+  bestedingen, demografie, koopgedrag) en zijn bruikbaar tot ongeveer drie jaar oud; ouder mag alleen
+  met één zin waarom het nog geldt, anders laat je het weg. *Theorie en mechanismen* beschrijven
+  waarom iets werkt (distinctiveness, mental availability) en verouderen door weerlegging, niet door
+  tijd. Gebruik een oud onderzoek nooit als beschrijving van de situatie vandaag.
+- **Nooit contentfarms, en let vooral op de vermomde variant:** blogs van leveranciers, webshops,
+  winkelketens of bureaus die een trendoverzicht publiceren als marketing. Een pagina met een titel
+  als "de trends van 2026" op een commerciële site is geen bron.
+- **Een betaalmuur is geen reden om weg te laten.** Probeer altijd te openen voor je iets afschrijft;
+  veel kwaliteitstitels zijn leesbaar ondanks een abonnee-vermelding. Lukt enkel kop en lead, noteer
+  dat dan als kopniveau. Dit staat los van de onbereikbare titels hierboven: die geven niets, ook
+  geen kop.
+- **Controleer de publicatiedatum in de pagina zelf**, niet in het zoekresultaat. Vertrouw nooit op
+  trainingskennis voor actuele feiten.
 - Begin breed, versmal daarna.
 - **Verzamel onderweg het ruwe materiaal, niet enkel je synthese:** titel, auteur, datum, **volledige
-  URL**, relevante excerpts (geen parafrase van één zin), cijfers, tabellen en concrete quotes uit
-  social listening met link en datum. Bewaar dit gestructureerd per M terwijl je zoekt. Achteraf
-  opnieuw opzoeken kost precies de tijd die je moet besparen.
+  URL**, relevante excerpts (geen parafrase van één zin), cijfers, tabellen en concrete quotes met
+  link en datum. Bewaar dit gestructureerd per M terwijl je zoekt. Achteraf opnieuw opzoeken kost
+  precies de tijd die je moet besparen.
+- **Noteer per bron of je hem zelf gevonden hebt of dat hij aangeleverd is.** Zo weet de strateeg
+  later welk deel van het dossier reproduceerbaar is.
+
+### Journalistiek doorzoeken, niet afwachten
+
+Nieuwsanalyse en achtergrondstukken zijn een aparte zoekroute, geen restcategorie. In de kop of de
+eerste alinea's staat vaak een geformuleerde spanning.
+
+**Hoe je zoekt.** Combineer het thema of de productcategorie met de naam van een publicatie, en
+herhaal dat over meerdere titels uit de tabel. Nederlandstalig eerst, dan Franstalig en
+internationaal. Franstalige bronnen zeker meenemen als de opdracht ook op de Waalse of Brusselse
+markt slaat; vermeld dan de taal bij de bron.
+
+**Wat je bewaart per vondst:** kop, ondertitel of lead letterlijk overgenomen, auteur, datum en de
+volledige URL. Parafraseer de kop niet: de formulering is het bruikbare deel.
+
+**Een kop is materiaal, geen bewijs.** Een spanning uit een artikel hoort onder *eerste spanningen*,
+met bron en datum, zonder conclusie. Een cijfer eruit bouw je nooit door zonder eerst naar de
+onderliggende studie te gaan.
 
 Voor de **inhoud en opbouw** van beide documenten: lees **`referenties/output-structuur.md`**.
 Voor de **opmaak** (Aptos, Word-stijlen, geen inhoudstafel, geen lijnen): lees
@@ -198,7 +271,7 @@ vast; alleen de inhoud wisselt.
    verzin geen Notion-inhoud.
 
 Het principe *"vertrekpunt, geen eindpunt, SD tekent af op min. 3/5 SMART"* is een interne werkregel
-(zie §1). **Zet die zin niet in de documenten of de chat** — dat is meta-uitleg die de strateeg al weet.
+(zie §1). **Zet die zin niet in de documenten of de chat.** Dat is meta-uitleg die de strateeg al weet.
 
 ---
 
@@ -210,20 +283,21 @@ Voordat je documenten opmaakt in gate 3: kijk hoe een researchrapport er bij Car
    [📚 Voorbeeldrapporten research: huisstijl](https://app.notion.com/p/3a597e952547813eb39bca266bb4e960).
    Daar staan zes echte rapporten (CM x Goed, HVW-CAPAC, Lapperre, Acerta, Wibra, VSV). Lees er
    minstens één die qua vraagstuk in de buurt komt, en neem opbouw, toon en detailniveau over.
+   **Neem de vorm over, niet de bronnenlijst.** Die rapporten zijn geschreven door mensen met
+   toegang tot betalende databanken. Dat een bron in een voorbeeldrapport staat, betekent niet
+   dat jij hem kan raadplegen.
 2. **Lokale terugval:** geen Notion-toegang? Kijk of er een map `voorbeelden/` staat naast het
    werkbestand, of vraag de strateeg om een voorbeeld.
 3. **Vind je niets?** Val terug op `referenties/output-structuur.md` en zeg er expliciet bij dat je
    zonder voorbeeld hebt gewerkt.
 
-Wat die rapporten gemeen hebben, in het kort: **de 4M als hoofdstukken**, **koppen die bevindingen
-zijn in plaats van labels** (*"Ouderen zijn veel dynamischer dan vroeger"*, niet *"Bevinding 3"*),
-de bron meteen onder de kop, bullets met de concrete cijfers, en openstaande vragen die gewoon in het
-document blijven staan.
+Wat die rapporten gemeen hebben: **de 4M als hoofdstukken**, **koppen die bevindingen zijn in plaats
+van labels** (*"Ouderen zijn veel dynamischer dan vroeger"*, niet *"Bevinding 3"*), de bron meteen
+onder de kop, bullets met de concrete cijfers, en openstaande vragen die in het document blijven
+staan.
 
-De inhoudelijke voorbeelden staan bewust **niet in deze skill**: ze leven in Notion, waar ze
-mee-evolueren met het werk. Het **opmaak**-voorbeeld staat wél in de skill: open
-`assets/Rapport-sjabloon.docx` om te zien hoe een leeg rapport eruit hoort te zien (Aptos,
-Word-stijlen, geen inhoudstafel, geen lijnen).
+Voor de opmaak: open `assets/Rapport-sjabloon.docx` (Aptos, Word-stijlen, geen inhoudstafel, geen
+lijnen).
 
 ---
 
@@ -256,6 +330,10 @@ Word-stijlen, geen inhoudstafel, geen lijnen).
 - [ ] Staan er geen **insights, human truths of strategische aanbevelingen** in? (§1, hard nakijken)
 - [ ] Staan de **eerste spanningen** erin als open tegenstellingen, zonder conclusie?
 - [ ] Zijn **gaps** benoemd in plaats van verzwegen?
+- [ ] Is elke bron ouder dan drie jaar ofwel een **mechanisme**, ofwel voorzien van een zin waarom hij nog geldt?
+- [ ] Rust geen enkele bevinding **uitsluitend op een bron van niveau D**?
+- [ ] Staan er **journalistieke bronnen** in de Maatschappij- en Mens-pijler, of is expliciet vastgesteld dat er over dit thema niets bruikbaars geschreven is?
+- [ ] Staat er **geen cijfer** in dat enkel uit een kop of lead komt zonder dat de onderliggende studie gezocht is?
 - [ ] Bevat het dossier **echte excerpts, cijfers en quotes**, niet enkel een langere versie van dezelfde synthese?
 - [ ] Zijn de **koppen in het dossier bevindingen** in plaats van labels, zoals in de voorbeeldrapporten?
 - [ ] Is de tekst **zakelijk en beschrijvend**, zonder beeldspraak, moeilijke woorden of meta-uitleg over je eigen werkwijze?

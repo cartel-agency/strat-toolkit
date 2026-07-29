@@ -158,9 +158,9 @@ Deze komen in bijna elk Cartel-rapport terug. Neem op wat relevant is; verzin ni
 | Pijler | Bouwsteen |
 |---|---|
 | **Merk** | SWOT · positionering en slagzin · beeldtaal en tone of voice · sonic branding · past campaigns · website- en UX-observaties |
-| **Markt** | Concurrentieanalyse (direct én indirect) · marktomvang en groei · share of voice / share of search · SEMrush-analyse · Meta Ad Library · recente campagnes van concurrenten · internationale precedenten ("andere landen") · WARC-cases |
+| **Markt** | Concurrentieanalyse (direct én indirect) · marktomvang en groei · share of search · prijs- en assortimentsobservatie bij concurrenten · Meta Ad Library · recente campagnes van concurrenten · jaarrekeningen · internationale precedenten ("andere landen") · *SEMrush-analyse en WARC-cases enkel als de strateeg ze aanlevert* |
 | **Mens** | Doelgroepdefinitie · jobs-to-be-done · drempels en drivers · academisch onderzoek · reviews (Trustpilot, Google) · social listening met letterlijke quotes · AnswerThePublic en Google Trends |
-| **Maatschappij** | Macrotrends · demografie en statistiek · wetgeving en beleid · cultural moments · trendrapporten |
+| **Maatschappij** | Macrotrends · demografie en statistiek · wetgeving en beleid · cultural moments · trendrapporten · nieuwsanalyse en achtergrondstukken uit de pers |
 
 ### Social listening
 
