@@ -5,7 +5,7 @@
     "url": "https://github.com/tomasmoesen"
   },
   "metadata": {
-    "description": "Interne marketplace van het Cartel-strategieteam. Bevat de Root Analyst research-agent en de Scout Setup-skill voor Root Scout."
+    "description": "Interne marketplace van het Cartel-strategieteam. Bevat de Root Analyst research-agent, de Root Strategist sparringpartner en de Scout Setup-skill voor Root Scout."
   },
   "plugins": [
     {
@@ -13,6 +13,15 @@
       "source": "./plugins/root-analyst",
       "description": "De research-agent van Cartel: van briefing naar research-summary en research-dossier, volgens de 4M-methodologie (Maatschappij, Markt, Mens, Merk). Levert bronmateriaal, geen strategie.",
       "version": "2.0.0",
+      "author": {
+        "name": "Tomas Moesen"
+      }
+    },
+    {
+      "name": "root-strategist",
+      "source": "./plugins/root-strategist",
+      "description": "De sparringpartner van Cartel: van research-summary naar gevalideerde creatieve briefing. Dwingt de flow Problem -> Insight -> Communication, toetst de vier blokken en bewaakt de shift in think/do/feel. Daagt uit, schrijft niet in jouw plaats.",
+      "version": "1.0.0",
       "author": {
         "name": "Tomas Moesen"
       }

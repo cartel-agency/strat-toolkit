@@ -1,15 +1,22 @@
 # Cartel Strategy: marketplace
 
 De interne Claude-marketplace van het Cartel-strategieteam. Een verzamelplek voor de AI-agents die het
-team gebruikt. De eerste is **Root Analyst**, de research-agent die van een briefing een
-research-summary en een research-dossier maakt volgens de 4M-methodologie (Maatschappij, Markt, Mens,
-Merk).
+team gebruikt.
+
+- **Root Analyst** is de research-agent: van een briefing naar een research-summary en een
+  research-dossier volgens de 4M-methodologie (Maatschappij, Markt, Mens, Merk). Levert materiaal en
+  stopt bewust vóór het inzicht.
+- **Root Strategist** is de sparringpartner: hij pikt op waar Root Analyst stopt en spart met de
+  strateeg tot de creatieve briefing staat. Werkt met de vier blokken, dwingt de flow Problem →
+  Insight → Communication af en toetst de shift in wat de doelgroep gaat denken, doen en voelen. Daagt
+  uit, schrijft niet in jouw plaats, en levert nooit de boodschap of het concept.
+- **Scout Setup** voegt een klant toe aan Root Scout, de learninglaag.
 
 ## Hoe zit dit in elkaar?
 
 Vier lagen, van groot naar klein:
 
-- **Deze repository** (`cartel-strategy`) is de opslagplek op GitHub.
+- **Deze repository** (`strat-toolkit`) is de opslagplek op GitHub.
 - **De marketplace** (`.claude-plugin/marketplace.json`) is de catalogus erin. Eén catalogus, meerdere
   plugins.
 - **Een plugin** is één bundel die je in Claude installeert. Root Analyst is er nu één van; later komen
@@ -31,7 +38,7 @@ moeten toevoegen.
 4. Plak deze repo:
 
    ```
-   tomasmoesen/cartel-strategy
+   tomasmoesen/strat-toolkit
    ```
 
 5. Zodra de marketplace is toegevoegd, klik **Install** bij de plugin **Root Analyst**.
@@ -75,7 +82,7 @@ skill dubbel.
 3. Push. De nieuwe agent verschijnt vanzelf in de catalogus van iedereen die de marketplace heeft.
 
 > **Belangrijk:** deze marketplace is **niet openbaar** in Claude. Alleen wie de repo-link
-> `tomasmoesen/cartel-strategy` toevoegt, ziet de plugins. Zet de GitHub-repo op **privé** als je hem
+> `tomasmoesen/strat-toolkit` toevoegt, ziet de plugins. Zet de GitHub-repo op **privé** als je hem
 > enkel binnen het team wil houden — collega's hebben dan wel een GitHub-account met leesrechten op de
 > repo nodig. Let op: de voorbeeldrapporten en de skill kunnen klantgevoelige data bevatten.
 
@@ -88,17 +95,24 @@ skill dubbel.
 ├── .claude-plugin/
 │   └── marketplace.json         # de marketplace-definitie (lijst met plugins)
 ├── plugins/
-│   └── root-analyst/
-│       ├── .claude-plugin/
-│       │   └── plugin.json       # de plugin-definitie
-│       └── skills/
-│           └── root-analyst/     # de eigenlijke skill (SKILL.md, referenties, assets)
+│   ├── root-analyst/
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json       # de plugin-definitie
+│   │   └── skills/
+│   │       └── root-analyst/     # de eigenlijke skill (SKILL.md, referenties, assets)
+│   ├── root-strategist/
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   └── skills/
+│   │       └── root-strategist/  # SKILL.md + referenties (vier blokken, toetsstenen,
+│   │                             # creatieve briefing, notion)
+│   └── scout-setup/
 └── README.md
 ```
 
 ## Eerste keer naar GitHub pushen
 
-Maak de repo `cartel-strategy` eerst aan op github.com (zonder README, zodat de push niet botst).
+Maak de repo `strat-toolkit` eerst aan op github.com (zonder README, zodat de push niet botst).
 Daarna, vanuit de map van deze repo:
 
 ```bash
@@ -106,6 +120,6 @@ git init
 git add -A
 git commit -m "Cartel Strategy marketplace — Root Analyst v2"
 git branch -M main
-git remote add origin https://github.com/tomasmoesen/cartel-strategy.git
+git remote add origin https://github.com/tomasmoesen/strat-toolkit.git
 git push -u origin main
 ```

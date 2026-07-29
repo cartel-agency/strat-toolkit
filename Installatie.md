@@ -20,7 +20,7 @@ dus een GitHub-account nodig; geef je gebruikersnaam door.
 5. Plak deze link en bevestig:
 
    ```
-   tomasmoesen/cartel-strategy
+   tomasmoesen/strat-toolkit
    ```
 
 6. De marketplace "Cartel Strategy" verschijnt. Klik **Install** bij **Root Analyst**.
