@@ -1,4 +1,4 @@
-# Root Scout — korte handleiding
+# Root Scout: korte handleiding
 
 ## Wat is Root Scout?
 
@@ -45,3 +45,55 @@ Rechtstreeks in de rij in **Scout Config**, zonder skill en zonder code:
 
 De zoekbronnen zelf (globale zoekopdrachten en vakpers-feeds) en de rapport-opmaak zitten in de code
 (`config/config.yaml` en `src/report_template.py`). Die aanpassen loopt via GitHub Desktop.
+
+## Rationale en Voedingsbodem: twee velden, twee rollen
+
+Dit is het meest gemaakte misverstand, dus lees het één keer goed. Op de klantpagina staan twee plekken
+met merkcontext, en ze worden **niet door dezelfde agent gelezen**.
+
+| | Waar | Wie leest het | Wanneer |
+|---|---|---|---|
+| **Rationale** | de kolom Rationale in de rij | de scout **én** de strategist | elke dag bij het filteren, en elke maandag bij het schrijven |
+| **Voedingsbodem** | de tekst op de klantpagina zelf | **alleen** de strategist | enkel maandag, bij het schrijven van het rapport |
+
+De gevolgen daarvan:
+
+- **De dagelijkse filter ziet alleen de Rationale.** Elke dag beoordeelt de agent tientallen artikels op
+  basis van dat ene veld. Zet je merkcontext uitsluitend in de voedingsbodem, dan stuurt die dus niet
+  wat er binnenkomt, en filter je op een half beeld.
+- **Zet in de Rationale wat een artikel wél en niet relevant maakt.** Concreet en afbakenend: waar ligt
+  het zwaartepunt, wat mag erbij als aanvulling, en wat valt altijd af.
+- **Zet in de Voedingsbodem wat nodig is om een goede insteek te schrijven.** De merkemoties, het
+  onderscheidende, wat de klant juist niet doet, en waar het merk nu mee bezig is.
+
+## Houd de voedingsbodem kort
+
+Hoe meer tekst, hoe moeilijker het voor de agent wordt om gericht te kiezen. Dat is geen bezuiniging
+maar een kwaliteitsregel: een lang merkdocument verdunt de aandacht over veel context die niet helpt om
+te oordelen.
+
+**Vuistregel:** zet in de voedingsbodem wat je een nieuwe collega zou vertellen vlak voor hij vijftig
+artikels moet doornemen. Niet meer. Voor BelOrta is dat ongeveer 400 woorden.
+
+Wat er wél in hoort:
+
+- De doelen achter elke campagne, in één of twee zinnen
+- De spanning of het probleem waar het merk op speelt
+- De merkemoties of criteria waarop je een case beoordeelt
+- Wat het merk onderscheidt en geloofwaardig maakt
+- Het concurrentieveld, en vooral: **wat de klant bewust niét doet**. Dat is het bruikbaarste
+  afwijssignaal dat je de agent kan geven
+- Distinctive assets
+- Wat er nu loopt, en wat de klant gevraagd heeft
+
+Wat eruit mag:
+
+- De geschiedenis van vorige merkplatformen. Eén zin volstaat
+- Interne wervingstekst over medewerkers, partners en trots
+- Uitrolplannen, mediaschema's en productiedetails
+- Passages die een eerder punt herhalen in andere woorden
+
+Het volledige merkdocument mag gerust bestaan, maar bewaar het ergens anders.
+
+> **Let op:** zet merkmateriaal niet op een **subpagina** van de klantpagina. De agent leest alleen de
+> tekst op de klantpagina zelf; subpagina's worden overgeslagen, en niets waarschuwt je daarvoor.
