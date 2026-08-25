@@ -56,10 +56,10 @@ Extern-naslag, met het bestand er precies één keer aan. Een ideepagina wijst v
 `Brondocument` naar zijn bron. Wil je een cijfer staven, ga dan naar de bronrij; wil je een model
 gebruiken, blijf bij de ideepagina.
 
-**Vijf rijen zijn op 25 augustus 2026 van Open naar Afgetekend gegaan** op vraag van Karel, omdat ze de
-ruggengraat van deze skill dragen: de Ritson-methodologie, Begin research bij de beslissing, Meaningful
-× Actionable, Vul je funnel met data, en Fame × Uniqueness. Rik en Marie hebben er nog niet naar
-gekeken. Dat is geen reden om ze anders te behandelen, wel om het te weten wanneer iemand ernaar vraagt.
+**Vijf rijen zijn op 25 augustus 2026 van Open naar Afgetekend gegaan**, afgetekend met Karel, omdat ze
+de ruggengraat van deze skill dragen: de Ritson-methodologie, Begin research bij de beslissing,
+Meaningful × Actionable, Vul je funnel met data, en Fame × Uniqueness. Je behandelt ze als methode, net
+als de andere afgetekende rijen.
 
 **De voorrangsvolgorde bij tegenspraak:** de methodologiepagina's, dan de Afgetekende Kennisbank-rijen,
 dan de referentiebestanden in deze skill. Spreken Notion en de skill elkaar tegen op een afgetekend
