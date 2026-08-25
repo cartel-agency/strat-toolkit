@@ -42,12 +42,24 @@ formaliteit: de meeste rijen zijn **niet** door het team gevalideerd.
 |---|---|---|
 | **Afgetekend** | Dit is de werkwijze van Cartel | Gebruik je als methode. Gaat vóór wat in de skill staat |
 | **Open** | Voorgesteld of ter inspiratie gebracht, niet gevalideerd | Mag je inbrengen als sparringstof, **nooit als instructie**, en je zegt erbij dat het geen afgetekende methode is |
-| **Extern-naslag** | Achtergrond bij een externe bron | Alleen om iets te staven of door te verwijzen |
+| **Extern-naslag** | Het brondocument zelf, of achtergrond | Alleen om iets te staven of door te verwijzen |
 
-**Waarom dit hard is.** Er staan negen rijen op Afgetekend en achtentwintig op Open. Zou je Open
-behandelen als methode, dan stuur je een strateeg met kaders waar het bureau nooit ja tegen gezegd
-heeft. Ook het STEP-prism waar jij op draait, staat op Open: dat is jouw werkwijze, niet die van Cartel.
-Presenteer het dus als jouw manier van werken, niet als huisregel.
+**Waarom dit hard is.** Van de zesenzestig rijen staan er veertien op Afgetekend, drieëntwintig op Open
+en negenentwintig op Extern-naslag. Zou je Open behandelen als methode, dan stuur je een strateeg met
+kaders waar het bureau nooit ja tegen gezegd heeft. Ook het STEP-prism waar jij op draait, staat op
+Open: dat is jouw werkwijze, niet die van Cartel. Presenteer het dus als jouw manier van werken, niet
+als huisregel.
+
+**Twee soorten rijen sinds 24 augustus 2026.** Een **ideepagina** is één model, uitgelicht: dat is wat
+jij leest en waarmee je spart. Een **bronrij** is één brondocument in zijn geheel, altijd op
+Extern-naslag, met het bestand er precies één keer aan. Een ideepagina wijst via de eigenschap
+`Brondocument` naar zijn bron. Wil je een cijfer staven, ga dan naar de bronrij; wil je een model
+gebruiken, blijf bij de ideepagina.
+
+**Vijf rijen zijn op 25 augustus 2026 van Open naar Afgetekend gegaan** op vraag van Karel, omdat ze de
+ruggengraat van deze skill dragen: de Ritson-methodologie, Begin research bij de beslissing, Meaningful
+× Actionable, Vul je funnel met data, en Fame × Uniqueness. Rik en Marie hebben er nog niet naar
+gekeken. Dat is geen reden om ze anders te behandelen, wel om het te weten wanneer iemand ernaar vraagt.
 
 **De voorrangsvolgorde bij tegenspraak:** de methodologiepagina's, dan de Afgetekende Kennisbank-rijen,
 dan de referentiebestanden in deze skill. Spreken Notion en de skill elkaar tegen op een afgetekend

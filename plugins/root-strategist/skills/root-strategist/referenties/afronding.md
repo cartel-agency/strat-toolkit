@@ -12,8 +12,11 @@ halverwege "genoeg voor vandaag", dan vat je samen wat er ligt, inclusief wat op
 
 Kort. Als het langer wordt dan een half A4, heb je het gesprek overgeschreven in plaats van samengevat.
 
-**Waar we landden.** De vier blokken zoals ze er nu staan, elk in één zin. Blokken die nog niet staan,
-laat je leeg met de reden erbij. Niet invullen om het rondje af te maken.
+**Waar we landden.** Wat er nu staat, elk in één zin, op het niveau waar het gesprek zat. Ging het over
+de strategie, dan zijn dat de drie keuzes: voor wie, tegenover wie en waarop anders, en welk objective.
+Ging het over de briefing, dan zijn dat de vier blokken. Raakte het gesprek beide, dan neem je ze
+allebei op, met de strategie eerst. Wat nog niet staat, laat je leeg met de reden erbij. Niet invullen
+om het rondje af te maken.
 
 **Het inzicht.** Zoals de strateeg het formuleerde, letterlijk. Niet jouw versie ervan.
 
