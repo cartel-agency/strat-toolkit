@@ -3,7 +3,8 @@ name: scout-setup
 description: >
   Voeg een nieuwe klant toe aan Root Scout (de wekelijkse inspiratie-agent) door de gebruiker te
   interviewen en op basis daarvan één rij in de Notion-database Scout Config aan te maken: klantnaam,
-  merkplatform, rationale voor cases én signalen, keywords, ontvangers en voedingsbodem. De agent
+  merkplatform, rationale voor cases én signalen (inclusief welke cijfers en onderzoeksbronnen
+  ertoe doen), keywords, ontvangers en voedingsbodem. De agent
   schrijft zelf niets naar de code; hij vult enkel Notion in, formatteert de invoer zo dat de scout en
   de strategist ermee kunnen werken, en signaleert wanneer het creditbudget of de zoekbronnen in
   config.yaml bijgesteld moeten worden.
@@ -93,6 +94,46 @@ Vraag dus door en verwerk het antwoord onderaan de rationale, onder een kopje **
 - Welke markt, consument of categorie moet een signaal raken om er voor deze klant toe te doen?
 - Welk soort cijfer of onderzoek zou een strateeg hier echt verrassen?
 - Wat is beslist geen signaal voor deze klant?
+
+**Vraag daarna door op de CIJFERS, en sla dit niet over.** Dit is waar het signaalspoor zijn waarde
+haalt, en het is precies wat Cartel tijdens research en strategie gebruikt: harde getallen om een
+uitspraak mee te onderbouwen. "Een op de vier Belgen", "76 procent van de mannen", "18,2 procent van
+het winkelbudget". Een signaal zonder getal is een mening die iedereen al had; een signaal met een
+getal en een genoemde onderzoeksbron is materiaal voor een presentatie.
+
+Vraag dus concreet:
+
+- **Welke grootheden doen ertoe voor deze klant?** Consumptiecijfers, penetratie, aankoopfrequentie,
+  prijsgevoeligheid, gedrag per leeftijdsgroep, kanaalverdeling, gezondheidscijfers? Noem er drie of
+  vier, want dit is wat de zoekopdrachten en de scoring sturen.
+- **Welke onderzoeksbronnen vertrouwt deze klant of deze sector?** GfK, YouGov, Nielsen, Statbel, VLAM,
+  de Hoge Gezondheidsraad, een sectorfederatie. Namen helpen het model herkennen dat het om echt
+  onderzoek gaat en niet om een losse bewering.
+- **Welke cijfers zijn juist NIET interessant?** Beursnotaties, kwartaalcijfers en mediabestedingen
+  zijn bijna nooit een signaal, hoe hard het getal ook is.
+
+Schrijf dat als een eigen alinea onder het kopje SIGNALEN, in deze vorm:
+
+```
+SIGNALEN: [waar een signaal over moet gaan]. CIJFERS DIE ERTOE DOEN: [de grootheden].
+VERTROUWDE BRONNEN: [de onderzoeksbureaus of instanties]. GEEN SIGNAAL: [wat er niet in hoort].
+```
+
+*Voorbeeld (BelOrta):*
+```
+SIGNALEN: hoeveel en hoe mensen groenten en fruit eten en kopen, hoe ze kiezen in de winkel, de keten
+van teler tot consument, en de context die dat verschuift (weer, prijs, gezondheid, gezinsleven).
+CIJFERS DIE ERTOE DOEN: consumptiecijfers per hoofd, aandeel van de bevolking dat de aanbeveling haalt,
+aankoopfrequentie en kanaalverdeling, prijsverschillen tussen categorieen, verschillen tussen generaties.
+VERTROUWDE BRONNEN: Statbel, VLAM, GfK, YouGov, Nielsen, de Hoge Gezondheidsraad, Sciensano.
+GEEN SIGNAAL: kwartaalcijfers van retailers, mediabestedingen, beursnieuws.
+```
+
+**Wat er daarna vanzelf gebeurt.** De dagelijkse poort geeft een artikel met een concreet cijfer en een
+genoemde onderzoeksbron een hogere signaalscore dan hetzelfde onderwerp zonder getal. En de strategist
+moet die cijfers verplicht in de twee zinnen van het rapport zetten, met de onderzoeksbron erbij, in
+plaats van "het artikel stelt dat". Beide regels lezen deze rationale, dus hoe concreter je dit invult,
+hoe bruikbaarder de signalen worden.
 
 ### 6. Keywords
 Zoektermen, **één per regel**. Dit wordt één extra brede zoekronde die elke dag meedraait.
