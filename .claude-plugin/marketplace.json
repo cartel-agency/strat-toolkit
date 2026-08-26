@@ -5,7 +5,7 @@
     "url": "https://github.com/tomasmoesen"
   },
   "metadata": {
-    "description": "Interne marketplace van het Cartel-strategieteam. Bevat de Root Analyst research-agent, de Root Strategist sparringpartner en de Scout Setup-skill voor Root Scout."
+    "description": "Interne marketplace van het Cartel-strategieteam. Bevat de Root Analyst research-agent, de Root Strategist sparringpartner, de Root Presentation deck-agent en de Scout Setup-skill voor Root Scout."
   },
   "plugins": [
     {
@@ -22,6 +22,15 @@
       "source": "./plugins/root-strategist",
       "description": "De sparringpartner van het strategieteam van Cartel. Spart over het inzicht, de strategie en de creatieve briefing, met het klantdossier en de methodologie uit Notion als context. Dwingt de flow Problem -> Insight -> Communication, toetst de vier blokken en bewaakt de shift in think/do/feel. Daagt uit, schrijft niet in jouw plaats.",
       "version": "2.1.0",
+      "author": {
+        "name": "Tomas Moesen"
+      }
+    },
+    {
+      "name": "root-presentation",
+      "source": "./plugins/root-presentation",
+      "description": "De presentatie-agent van Cartel: van briefing, research of strategie naar een afgewerkt deck in het Cartel-sjabloon. Stelt eerst de verhaallijn voor als sliderij met action titles, bouwt daarna verder op het sjabloon en ontwerpt nooit een slide van nul.",
+      "version": "1.0.0",
       "author": {
         "name": "Tomas Moesen"
       }

@@ -1,0 +1,39 @@
+{
+  "sjabloon": "assets/cartel-basis.pptx",
+  "titel": "Proefdeck",
+  "slides": [
+    {
+      "layout": "CartelAgency-Titeldia-4",
+      "action title": "Novo Nordisk: obesitas in België",
+      "tekst": "Researchdossier, augustus 2026",
+      "notities": "Kort kaderen, niet voorlezen."
+    },
+    {
+      "layout": "CartelAgency-Titel+Tekst-Zwart",
+      "action title": "Honderd jaar diabetes, en obesitas als snelst groeiende tak",
+      "tekst": "Deens bedrijf, EUCAN als regio, Belgische vennootschap met minder dan 83 voltijdse medewerkers.",
+      "bron": "Bron: jaarverslag Novo Nordisk, 2025",
+      "notities": "Eén cijferlijn volstaat."
+    },
+    {
+      "layout": "2_CartelAgency-Sentence-Black",
+      "action title": "Geen budget. Geen looptijd. Geen nulmeting.",
+      "tekst": "Wat de offerte niet geeft",
+      "notities": "Even laten hangen."
+    },
+    {
+      "layout": "CartelAgency-Tussentitel-2",
+      "action title": "De markt",
+      "kort label": "01",
+      "beeld": "sfeerbeeld apotheek, breed",
+      "notities": "Overgang naar het marktblok."
+    },
+    {
+      "layout": "CartelAgency-Titel+Tekst-Zwart",
+      "action title": "Alleen diabetes wordt terugbetaald, obesitas zelf niet",
+      "tekst": "Mounjaro is het enige middel met terugbetaling in België, en enkel bij de indicatie diabetes.",
+      "bron": "Bron: RIZIV, 2026",
+      "notities": "Kern van het marktblok."
+    }
+  ]
+}

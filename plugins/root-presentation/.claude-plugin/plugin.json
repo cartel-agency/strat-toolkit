@@ -1,0 +1,8 @@
+{
+  "name": "root-presentation",
+  "description": "De presentatie-agent van Cartel: van briefing, research of strategie naar een afgewerkt deck in het Cartel-sjabloon. Vult een bestaand sjabloon in en bouwt nooit slides van nul.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tomas Moesen"
+  }
+}
