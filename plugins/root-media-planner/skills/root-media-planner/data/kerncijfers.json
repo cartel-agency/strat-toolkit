@@ -1,0 +1,659 @@
+{
+  "over_dit_bestand": {
+    "wat": "De cijfers uit de tien mediapapers in Root Media Planner/Input, elk met bron, jaar en meetbasis. Dit is de enige plek waar een cijfer mag ontstaan. Staat een cijfer hier niet in, dan komt het uit de klantdata of het is een aanname, en dan zeg je dat erbij.",
+    "bijgewerkt": "2026-08-27",
+    "leesregel": "Alle bronnen hieronder meten in de VS, het VK of internationaal. Geen enkel cijfer is een Belgische norm. Gebruik ze als richtsnoer en als argument, nooit als benchmark waaraan je een Belgische klant afrekent.",
+    "licentie": "De WARC-rapporten (Multiplier Effect, Multiplier Playbook, Global Ad Trends) dragen een licentie die verspreiden en archiveren verbiedt. Je citeert eruit met bronvermelding; je stuurt het pdf niet door en je zet het niet in Notion.",
+    "velden": {
+      "id": "sleutel voor grafiek.py",
+      "waarde": "het cijfer zoals het in de bron staat",
+      "basis": "waarop gemeten is: steekproef, markt, periode",
+      "grafiek": "aanwezig als er een reeks in zit die getekend kan worden"
+    }
+  },
+
+  "budget_en_schaal": [
+    {
+      "id": "budget-vs-roi",
+      "onderwerp": "Wat winst verklaart",
+      "waarde": "Budget verklaart 89 procent van de variatie in incrementele winst, ROI 11 procent",
+      "uitleg": "Per sector: FMCG 86/14, duurzame goederen 88/12, retail 90/10, diensten 91/9. Marketeers zelf schatten het omgekeerd in, op 35 procent budget tegen 65 procent ROI.",
+      "bron": "Binet & Davis, Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "IPA Databank 1998-2024, regressie op netto winst, gecorrigeerd voor categoriegrootte en inflatie",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Wat marketeers denken tegenover wat de data zegt",
+        "reeksen": [
+          {"naam": "Wat marketeers denken", "labels": ["Budget", "ROI"], "waarden": [35, 65]},
+          {"naam": "Wat de data zegt", "labels": ["Budget", "ROI"], "waarden": [89, 11]}
+        ],
+        "eenheid": "% van de verklaarde winstvariatie"
+      }
+    },
+    {
+      "id": "efficientie-vs-effectiviteit",
+      "onderwerp": "Efficienter maar minder effectief",
+      "waarde": "Media-ROI plus 4 procent, incrementele winst min 11 procent",
+      "uitleg": "Mediaan na corona tegenover voor corona. De sector werd efficienter en tegelijk minder effectief. Dit is het cijfer achter de projectregel sturen op effectiviteit, niet efficientie.",
+      "bron": "Binet & Davis, Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "IPA Databank, medianen 2022-2024 tegenover 2018-2020, winst in prijzen van 2024"
+    },
+    {
+      "id": "esov",
+      "onderwerp": "Excess Share of Voice",
+      "waarde": "Merken met een SOV boven hun marktaandeel groeien, merken eronder krimpen, en de groeisnelheid is evenredig met het verschil",
+      "uitleg": "De klassieke ESOV-lijn. A/S-ratio werkt voor een onderhoudsbudget, SOV-analyse werkt beter voor een groeibudget. Slechts 18 procent van de bedrijven doet SOV-analyse, meestal omdat de concurrentiecijfers ontbreken.",
+      "bron": "Binet & Davis, Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "IPA Databank, decennia aan cases"
+    },
+    {
+      "id": "budgetpraktijk",
+      "onderwerp": "Hoe budgetten echt gezet worden",
+      "waarde": "76 procent doet geen enkele financiele modellering, 28 procent overlegt niet met de C-suite, 51 procent doet vorig jaar plus een aanpassing",
+      "uitleg": "Verder: ROI is de populairste maatstaf (52 procent), 38 procent gebruikt econometrie, minder dan 30 procent doet gecontroleerde tests, 41 procent gebruikt A/S-ratio's, 18 procent doet SOV-analyse.",
+      "bron": "Medialab CMO-survey in Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "500 senior marketeers, meerdere sectoren en bedrijfsgroottes",
+      "grafiek": {
+        "type": "staaf-horizontaal",
+        "titel": "Budgetten worden gezet zonder model",
+        "reeksen": [
+          {"naam": "Aandeel bedrijven", "labels": ["Geen financiele modellering", "ROI als hoofdmaatstaf", "Vorig jaar plus aanpassing", "Gebruikt A/S-ratio", "Gebruikt econometrie", "Doet tests", "Doet SOV-analyse"], "waarden": [76, 52, 51, 41, 38, 30, 18]}
+        ],
+        "eenheid": "% van de bedrijven"
+      }
+    },
+    {
+      "id": "as-ratio-daling",
+      "onderwerp": "Advertising to sales daalt",
+      "waarde": "In 2024 lag de gemiddelde A/S-ratio 40 procent onder het niveau van voor corona",
+      "uitleg": "Van 10,5 procent van de omzet in 2019 naar 7,7 procent in 2024, met een dip naar 6,4 procent in 2021.",
+      "bron": "Gartner CMO Spend Survey, geciteerd in Go Big or Go Home, IPA",
+      "jaar": 2024,
+      "basis": "n=395 CMO's in 2024, exclusief weet niet",
+      "grafiek": {
+        "type": "lijn",
+        "titel": "Marketingbudget als aandeel van de omzet",
+        "reeksen": [
+          {"naam": "A/S-ratio", "labels": ["2019", "2020", "2021", "2022", "2023", "2024"], "waarden": [10.5, 11.0, 6.4, 9.5, 9.1, 7.7]}
+        ],
+        "eenheid": "% van de totale omzet"
+      }
+    },
+    {
+      "id": "roi-val",
+      "onderwerp": "Waarom ROI een gevaarlijke maatstaf is",
+      "waarde": "Maximale ROI valt samen met minimale winst",
+      "uitleg": "Plan A: 1 miljoen budget, ROI 2,00, netto winst 1 miljoen. Plan B: 10 miljoen budget, ROI 1,20, netto winst 2 miljoen. Wie op ROI stuurt kiest A en verdient de helft. Om winst te maximaliseren stuur je op een marginale ROI van nul.",
+      "bron": "Binet & Davis, Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "Rekenvoorbeeld op de klassieke curve van afnemende meeropbrengsten"
+    }
+  ],
+
+  "bereik_en_frequentie": [
+    {
+      "id": "reach-first",
+      "onderwerp": "Bereik eerst, frequentie daarna",
+      "waarde": "Iemand nieuw bereiken is bijna altijd efficienter dan dezelfde persoon een vijfde keer bereiken",
+      "uitleg": "De eerste vertoning doet het zware werk. Frequentie telt pas zodra het bereik staat.",
+      "bron": "Medialab in Go Big or Go Home, IPA, in lijn met Byron Sharp",
+      "jaar": 2026,
+      "basis": "Medialab Apollo Databank"
+    },
+    {
+      "id": "frequentiezones",
+      "onderwerp": "Twee optimale frequentiezones",
+      "waarde": "Conversie 3 tot 6 vertoningen per aankoopcyclus, merkopbouw 7 tot 14 vertoningen",
+      "uitleg": "De vereiste frequentie stijgt naarmate het medialandschap fragmenteert. Twee verschillende doelen, twee verschillende zones. Wie er een getal van maakt, kiest impliciet een doel.",
+      "bron": "Medialab consolidated in Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "Medialab-onderzoek, geconsolideerd over campagnes",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Twee optimale frequentiezones",
+        "reeksen": [
+          {"naam": "Ondergrens", "labels": ["Conversie", "Merkopbouw"], "waarden": [3, 7]},
+          {"naam": "Bovengrens", "labels": ["Conversie", "Merkopbouw"], "waarden": [6, 14]}
+        ],
+        "eenheid": "vertoningen"
+      }
+    },
+    {
+      "id": "uitvoeringskloof",
+      "onderwerp": "De kloof tussen weten en doen",
+      "waarde": "Minder dan de helft van de CMO's maximaliseert bereik, 87 procent capt geen frequentie, 48 procent zit activatie-dominant",
+      "uitleg": "Frequentiecapping kan de mediakost 27 tot 38 procent verlagen zonder verlies aan resultaat. En 68 procent van de bedrijven richt zich vrijwel volledig op de onderkant van de funnel.",
+      "bron": "Medialab CMO-survey in Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "500 senior marketeers"
+    },
+    {
+      "id": "95-5",
+      "onderwerp": "In-markt tegenover uit-markt",
+      "waarde": "Hoogstens 5 procent van de categoriekopers is op enig moment in de markt",
+      "uitleg": "De poel toekomstige kopers is minstens twintig keer groter dan de poel huidige kopers. Performance-technieken die op koopsignalen jagen, kunnen dus per definitie maar een fractie van de markt raken. 56 procent van de bedrijven richt zich toch op een kleiner deel van de markt.",
+      "bron": "Go Big or Go Home (IPA) en The Multiplier Effect (WARC)",
+      "jaar": 2026,
+      "basis": "In B2B bekend als de 95/5-regel"
+    },
+    {
+      "id": "ouderen",
+      "onderwerp": "De demografische kanteling",
+      "waarde": "45-plussers dragen meer dan de helft van de consumentenbestedingen, 62 procent van de CMO's spreekt hen niet aan",
+      "uitleg": "De wekelijkse besteding van 45 tot 64 is nagenoeg gelijk aan die van 25 tot 44, maar de mediabesteding helt zwaar over naar de jongere groep. Voor 45-plussers zijn commerciele tv, radio en buitenreclame de voornaamste bereikdragers. Britse cijfers.",
+      "bron": "ONS 2025 en IPA TouchPoints 2025 in Go Big or Go Home",
+      "jaar": 2026,
+      "basis": "Britse huishoudbestedingen en mediabereik",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Wekelijkse besteding per leeftijdsgroep, VK",
+        "reeksen": [
+          {"naam": "Wekelijkse besteding in pond", "labels": ["Onder 25", "25-44", "45-64", "65 plus"], "waarden": [450, 625, 600, 450]}
+        ],
+        "eenheid": "pond per week"
+      }
+    },
+    {
+      "id": "youtube-kanteling",
+      "onderwerp": "YouTube en lineaire tv op het grote scherm",
+      "waarde": "Bij onder 45 haalt YouTube pariteit met commerciele lineaire tv en neemt het 50 procent van het bigscreenkijken in",
+      "uitleg": "Bij 45-plussers staat het YouTube-bereik op ongeveer 30 procent en het groeit. Een moderne bereikaanpak is dus geen keuze tussen traditioneel en digitaal maar een mix van allebei. Britse cijfers.",
+      "bron": "Barb in Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "Maandelijks bereik per AV-platform, 25 minuten aaneengesloten, VK"
+    }
+  ],
+
+  "brand_en_performance": [
+    {
+      "id": "brand-advantage",
+      "onderwerp": "Het merkvoordeel en de performance-boete",
+      "waarde": "Van een performance-strategie naar een gemengde aanpak: mediaan plus 90 procent omzet-ROI. Omgekeerd min 40 procent",
+      "uitleg": "De bandbreedte is plus 25 tot plus 100 procent. De performance-boete bij overinvesteren in performance ligt tussen min 20 en min 50 procent.",
+      "bron": "Analytic Partners ROI Genome in The Multiplier Effect, WARC",
+      "jaar": 2025,
+      "basis": "Meer dan 1000 merken, 50-plus landen, honderden miljarden aan spend, representatief voor de VS",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Van performance naar een gemengde aanpak",
+        "reeksen": [
+          {"naam": "Verandering in omzet-ROI", "labels": ["Naar gemengd (merkvoordeel)", "Naar performance (boete)"], "waarden": [90, -40]}
+        ],
+        "eenheid": "% mediaan verandering"
+      }
+    },
+    {
+      "id": "brand-baseline",
+      "onderwerp": "Het merkinvesteringsspectrum",
+      "waarde": "Minimaal 30 procent naar equity-gedreven werk, ideaal 40 tot 60 procent, voor veel merken eerder 50 tot 70 procent",
+      "uitleg": "Onder 30 procent begint de doom loop. Boven 75 procent verlies je in-markt kopers. Los daarvan geldt een search plafond: meer dan 25 procent van het budget naar search is een rode vlag.",
+      "bron": "The Multiplier Effect, WARC",
+      "jaar": 2025,
+      "basis": "Coalitie van WARC, Analytic Partners, BERA.ai, System1 en Prophet, VS-data",
+      "grafiek": {
+        "type": "staaf-horizontaal",
+        "titel": "Het merkinvesteringsspectrum",
+        "reeksen": [
+          {"naam": "Aandeel van het budget naar merk", "labels": ["Ondergrens (doom loop)", "Ideale ondergrens", "Ideale bovengrens", "Bovengrens (in-markt verlies)"], "waarden": [30, 40, 60, 75]}
+        ],
+        "eenheid": "% van het mediabudget"
+      }
+    },
+    {
+      "id": "media-multiplier",
+      "onderwerp": "De media multiplier",
+      "waarde": "De meeste media werken dubbel: de verhouding tussen totale en kortetermijn-ROAS ligt doorgaans tussen 1,1 en 2",
+      "uitleg": "Digitale video, streaming video en lineaire tv scoorden hoog op kortetermijn-omzet-ROI, hoewel ze als langetermijnkanalen gelden. Sociale media, geassocieerd met performance, was een gezonde drijver van langetermijnresultaat. Zelfs betaalde search geeft een kleine uplift op langere termijn.",
+      "bron": "Analytic Partners ROI Genome en BERA.ai in The Multiplier Effect, WARC",
+      "jaar": 2025,
+      "basis": "Langetermijnmultiplier is totale ROAS gedeeld door kortetermijn-ROAS"
+    },
+    {
+      "id": "roas-per-rol",
+      "onderwerp": "ROAS over tijd, merk tegenover performance",
+      "waarde": "Offline vraagcreatie 3,29 totaal met multiplier 1,05; online vraagconversie 3,42 totaal met multiplier 1,4",
+      "uitleg": "Voorbeeldmerk uit de duurzame goederen. Online vraagcreatie 2,70 (multiplier 1,1), offline vraagconversie 3,58 (multiplier 1,3). De les is niet het exacte getal maar de vorm: equity-werk betaalt ook op korte termijn, performance ook op lange termijn.",
+      "bron": "BERA.ai in The Multiplier Effect, WARC",
+      "jaar": 2025,
+      "basis": "Een B2C-klant in duurzame goederen, MMM plus interne data",
+      "grafiek": {
+        "type": "gestapeld",
+        "titel": "ROAS over tijd per rol",
+        "reeksen": [
+          {"naam": "Korte termijn", "labels": ["Online vraagcreatie", "Offline vraagcreatie", "Online vraagconversie", "Offline vraagconversie"], "waarden": [2.46, 3.11, 2.38, 2.79]},
+          {"naam": "Lange termijn", "labels": ["Online vraagcreatie", "Offline vraagcreatie", "Online vraagconversie", "Offline vraagconversie"], "waarden": [0.24, 0.18, 1.04, 0.79]}
+        ],
+        "eenheid": "ROAS per uitgegeven eenheid"
+      }
+    },
+    {
+      "id": "attributie-overschatting",
+      "onderwerp": "Wat attributie verkeerd doet",
+      "waarde": "Performance-attributie overschat de rol van klikbare activiteiten met een factor 2 tot 10",
+      "uitleg": "30 procent van de betaalde search-interacties komt voort uit andere marketing. Nog eens 30 tot 60 procent hoort toegeschreven aan seizoen, loyaliteit en categorietrends. Lineaire tv is de grootste aanjager van search-klikken.",
+      "bron": "Analytic Partners ROI Genome in The Multiplier Effect, WARC",
+      "jaar": 2025,
+      "basis": "Kanaalinteracties in ROI Genome"
+    },
+    {
+      "id": "retail-media-lekt",
+      "onderwerp": "Retail media blijft niet binnen de winkel",
+      "waarde": "45 procent van de incrementele aankopen uit betaalde Amazon-display werd niet op Amazon gedaan, bij search 23 procent",
+      "uitleg": "Retail media, doorgaans gezien als een tactiek vlak bij het aankooppunt, heeft merkeffecten buiten het eigen platform. Dat zet de lineaire funnel onder druk.",
+      "bron": "Analytic Partners ROI Genome in The Multiplier Effect, WARC",
+      "jaar": 2025,
+      "basis": "Betaalde display en search op Amazon"
+    },
+    {
+      "id": "missing-15",
+      "onderwerp": "De ontbrekende 15 procent",
+      "waarde": "Gemiddeld 15 procent van de baseline-omzet is toe te schrijven aan merksterkte, en dat is onzichtbaar in standaard MMM",
+      "uitleg": "Het wordt pas zichtbaar als brand tracking in het model zit. Daarnaast: reclame is een zwakke kracht en verklaart ongeveer 15 procent van de verandering in merk-equity, de rest komt uit product, prijs, distributie en ervaring.",
+      "bron": "The Multiplier Playbook, WARC",
+      "jaar": 2026,
+      "basis": "Indicatieve data uit de coalitie"
+    },
+    {
+      "id": "wear-in",
+      "onderwerp": "Advertenties slijten niet, ze moeten inslijten",
+      "waarde": "90 procent van de advertenties slijt niet uit, en 90 procent krijgt niet de tijd om in te slijten",
+      "uitleg": "Uitslijten is gedefinieerd als het moment waarop de kost van nieuwe creatie zwaarder weegt dan de terugval van de oude. Voorbeeld: de Booking.com-spot van de Super Bowl 2023 ging van 3,3 naar 4,3 sterren bij hertest bijna een jaar later. Dit is het argument voor minder, groter, langer.",
+      "bron": "Analytic Partners ROI Genome en System1 in The Multiplier Playbook, WARC",
+      "jaar": 2026,
+      "basis": "ROI Genome plus System1 Test Your Ad"
+    },
+    {
+      "id": "siloed-teams",
+      "onderwerp": "Waarom integratie stukloopt",
+      "waarde": "65 procent heeft gescheiden merk- en performancebudgetten, 44 procent heeft een gedeelde taal, 25 procent werkt met geintegreerde teams",
+      "uitleg": "Ook: 40 procent zegt dat de rol van reclame duidelijk begrepen wordt in de C-suite, 19 procent zegt dat veranderingen in merk-equity routinematig aan zakelijke resultaten gekoppeld worden.",
+      "bron": "WARC/ANA-survey in The Multiplier Playbook",
+      "jaar": 2026,
+      "basis": "300-plus marketeers in Noord-Amerika plus 30 diepte-interviews"
+    }
+  ],
+
+  "aandacht_en_mediakwaliteit": [
+    {
+      "id": "wastage",
+      "onderwerp": "Geleverd tegenover gezien",
+      "waarde": "Ongeveer 75 procent van de MRC-geaccrediteerde digitale voorraad krijgt nul actieve aandacht, en over alle metingen heen blijft ongeveer 80 procent van de vertoningen ongezien",
+      "uitleg": "Viewability meet of een advertentie technisch getoond kon worden, niet of iemand keek. Wastage is de keerzijde van Attention Volume: van 41 procent bij niet-dull tot 94 procent bij extreem dull.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "114.899 biometrisch bevestigde advertentieviews, 190 campagnes, 164 merken, 46 IAB-categorieen, 12 landen, 60 formats"
+    },
+    {
+      "id": "attention-volume",
+      "onderwerp": "Attention Volume per dullheidsniveau",
+      "waarde": "Niet-dull 59 procent, matig dull 46 procent, zeer dull 36 procent, extreem dull 6 procent",
+      "uitleg": "Attention Volume is actieve aandachtsbereik maal actieve aandachtstijd, gedeeld door de totale tijd in beeld. Een campagne op 40 procent AV wordt in zestig procent van de beschikbare tijd niet bekeken.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "115.000 real-time biometrische views",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Hoeveel van de beschikbare aandacht een campagne echt krijgt",
+        "reeksen": [
+          {"naam": "Attention Volume", "labels": ["Niet dull", "Matig dull", "Zeer dull", "Extreem dull"], "waarden": [59, 46, 36, 6]}
+        ],
+        "eenheid": "% van de beschikbare aandacht"
+      }
+    },
+    {
+      "id": "aandachtsseconden",
+      "onderwerp": "Actieve aandacht in seconden",
+      "waarde": "Van 13,5 seconden bij niet-dull naar 1,0 seconde bij extreem dull",
+      "uitleg": "Tijd in beeld daalt in dezelfde beweging van 22,6 naar 7,8 seconden en het attentive reach van 85 naar 34 procent. Het verschil tussen tijd in beeld en actieve aandacht is precies het gat tussen geleverd en gezien.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "115.000 real-time biometrische views",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Actieve aandacht tegenover tijd in beeld",
+        "reeksen": [
+          {"naam": "Actieve aandacht", "labels": ["Niet dull", "Matig dull", "Zeer dull", "Extreem dull"], "waarden": [13.5, 6.4, 2.8, 1.0]},
+          {"naam": "Tijd in beeld", "labels": ["Niet dull", "Matig dull", "Zeer dull", "Extreem dull"], "waarden": [22.6, 11.7, 8.8, 7.8]}
+        ],
+        "eenheid": "seconden"
+      }
+    },
+    {
+      "id": "geheugendrempel",
+      "onderwerp": "De drempel voor geheugenvorming",
+      "waarde": "Ongeveer 2,5 seconden actieve aandacht, en 1,5 seconde bij sterke distinctive assets",
+      "uitleg": "Bij niet-dull campagnes haalt 70 procent van de views die drempel, bij extreem dull 9 procent. De verlaging naar 1,5 seconde geldt alleen bij sterke merkfluency; voor merken die hun assets nog aan het bouwen zijn, houdt 2,5 seconden stand.",
+      "bron": "Nelson-Field met VCCP, The Bad Twin Test, in The Eye-Watering Cost of Dull Media",
+      "jaar": 2025,
+      "basis": "Gematchte creatiefparen in identieke formats"
+    },
+    {
+      "id": "cpm-val",
+      "onderwerp": "De illusie van efficientie",
+      "waarde": "CPM daalt 41 procent van niet-dull naar extreem dull, maar de efficientie zakt 77 procent",
+      "uitleg": "Van 27,90 dollar naar 16,50 dollar CPM, terwijl de STAS-efficientie per dollar van 2,23 naar 0,51 valt. Goedkoper kopen is duurder uitkomen. CPM meet de kost van distributie, niet de waarde van levering.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "Format-CPM's uit de campagneset, STAS uit de blootgestelde panels",
+      "grafiek": {
+        "type": "lijn-dubbel",
+        "titel": "Goedkopere CPM, snellere daling van de efficientie",
+        "reeksen": [
+          {"naam": "CPM in dollar", "labels": ["Niet dull", "Extreem dull"], "waarden": [27.9, 16.5]},
+          {"naam": "STAS-efficientie per dollar", "labels": ["Niet dull", "Extreem dull"], "waarden": [2.23, 0.51]}
+        ],
+        "eenheid": "dollar"
+      }
+    },
+    {
+      "id": "cost-of-dull-media",
+      "onderwerp": "De kost van dull media",
+      "waarde": "198 miljard dollar per jaar extra nodig, en 43 dollarcent verlies per dollar in dull omgevingen",
+      "uitleg": "Bovenop de 427,4 miljard Amerikaanse mediabesteding van 2024. Uitgesplitst: matig dull plus 49,79 miljard, zeer dull plus 78,62 miljard, extreem dull plus 69,89 miljard. Afgezet tegen de best presterende campagnes wordt het 245 miljard, en verliest sterke creatie 72 cent per dollar in dull media.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "Model op CPM per format, spendverdeling en STAS-efficientie, VS-mediabesteding uit WARC",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Extra jaarlijkse besteding nodig om dull media te compenseren",
+        "reeksen": [
+          {"naam": "Extra besteding in miljard dollar", "labels": ["Niet dull", "Matig dull", "Zeer dull", "Extreem dull"], "waarden": [0, 49.79, 78.62, 69.89]}
+        ],
+        "eenheid": "miljard dollar per jaar"
+      }
+    },
+    {
+      "id": "media-versus-creatie",
+      "onderwerp": "Wat de uitkomst het meest bepaalt",
+      "waarde": "Media verklaart ongeveer 65 tot 70 procent van de variantie in uitkomst, creatie 30 tot 35 procent",
+      "uitleg": "Gemeten binnen deze dataset en op deze uitkomstmaat. Let op: dit spreekt de Creative Dividend niet tegen, het meet iets anders. Zie de botsingen in toetsstenen.md.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "Vergelijking van de prestatiekloof tussen formats en tussen executies"
+    },
+    {
+      "id": "slow-decay",
+      "onderwerp": "De 60/40 van het aandachtsverval",
+      "waarde": "Niet-dull campagnes bestaan voor ongeveer 80 procent uit slow decay formats, extreem dull campagnes voor 80 procent uit fast decay",
+      "uitleg": "Het rapport noemt 60/40 het kantelpunt in de verhouding slow tegenover fast decay. Let op de naamsverwarring: dit is niet de 60/40 van Binet en Field over merk tegenover activatie. Twee verschillende dingen met hetzelfde getal.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "Formatverdeling per dullheidskwartiel",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Aandeel slow decay formats per dullheidsniveau",
+        "reeksen": [
+          {"naam": "Slow decay formats", "labels": ["Niet dull", "Matig dull", "Zeer dull", "Extreem dull"], "waarden": [76, 60, 33, 19]}
+        ],
+        "eenheid": "% van de formats"
+      }
+    },
+    {
+      "id": "challengers-aandacht",
+      "onderwerp": "Dull media straft challengers harder",
+      "waarde": "Challenger-STAS zakt van 199 naar 107, grote merken van 115 naar 99",
+      "uitleg": "Een zes keer steilere val, terwijl beide groepen ongeveer evenveel aandacht krijgen in extreem dull omgevingen. Grote merken teren op salience, challengers hebben elke seconde aandacht nodig om geheugen te bouwen.",
+      "bron": "Nelson-Field, The Eye-Watering Cost of Dull Media, Amplified",
+      "jaar": 2025,
+      "basis": "Uitsplitsing naar merkgrootte binnen de campagneset",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "STAS per merkgrootte, niet-dull tegenover extreem dull",
+        "reeksen": [
+          {"naam": "Niet dull", "labels": ["Challenger", "Groot merk"], "waarden": [199, 115]},
+          {"naam": "Extreem dull", "labels": ["Challenger", "Groot merk"], "waarden": [107, 99]}
+        ],
+        "eenheid": "STAS-index, 100 is geen effect"
+      }
+    }
+  ],
+
+  "creatie_als_mediavariabele": [
+    {
+      "id": "winstmultipliers",
+      "onderwerp": "De winstmultipliers per stuurknop",
+      "waarde": "Merkgrootte x20, creatieve kwaliteit x12, budgetzetting over markten x5, multimedia x2,5, merk-performancebalans x2,0, fasering x1,2, doelgroep x1,1",
+      "uitleg": "Marketeers ranken doelgroepbepaling in de top drie (61 procent in de VS, 45 procent in Europa) terwijl het de kleinste multiplier is, en zetten creatie lager dan tweede (68 procent VS, 62 procent Europa) terwijl het de op een na grootste is.",
+      "bron": "Paul Dyson (Accelero) 2023, geciteerd in The Creative Dividend, System1 en Effie",
+      "jaar": 2025,
+      "basis": "Econometrische meta-analyse",
+      "grafiek": {
+        "type": "staaf-horizontaal",
+        "titel": "Winstmultipliers per stuurknop",
+        "reeksen": [
+          {"naam": "Multiplier", "labels": ["Merkgrootte", "Creatieve kwaliteit", "Budget over markten", "Budget over portfolio", "Multimedia", "Merk-performancebalans", "Budget over varianten", "Kost en seizoen", "Mediafasering", "Doelgroep"], "waarden": [20, 12, 5, 3, 2.5, 2.0, 1.7, 1.6, 1.2, 1.1]}
+        ],
+        "eenheid": "x maal"
+      }
+    },
+    {
+      "id": "creative-multiplier-tijd",
+      "onderwerp": "Creativiteit wordt belangrijker",
+      "waarde": "De creatieve winstmultiplier ging van x10 in 2014 naar x12 in 2023 naar x21 in 2025",
+      "uitleg": "In dezelfde periode daalde merkopbouw van 3,0 naar 2,1 gemiddelde merkeffecten en de emotie van 3,3 naar 5,4 sterren omgekeerd gemeten. Naarmate de gemiddelde advertentie duller wordt, is het verschil maken meer waard.",
+      "bron": "Paul Dyson 2014 en 2023, en The Creative Dividend, System1 en Effie 2025",
+      "jaar": 2025,
+      "basis": "Effie Case Library en System1 Test Your Ad",
+      "grafiek": {
+        "type": "lijn",
+        "titel": "De creatieve winstmultiplier over de tijd",
+        "reeksen": [
+          {"naam": "Creatieve winstmultiplier", "labels": ["2014", "2023", "2025"], "waarden": [10, 12, 21]}
+        ],
+        "eenheid": "x maal"
+      }
+    },
+    {
+      "id": "super-touchpoints",
+      "onderwerp": "Super touchpoints",
+      "waarde": "Sommige contactpunten doen zowel het onmiddellijke als het blijvende werk",
+      "uitleg": "Uitgezet op twee assen: performance-effect (verkoop binnen zes maanden) tegen merkopbouw (merkeffecten na zes maanden). Tv, online video en CTV, en betaalde sociale media scoren op beide. In-store, SEM en directe kanalen zitten aan de conversiekant, print en pr eerder aan de merkkant.",
+      "bron": "The Creative Dividend, System1 en Effie",
+      "jaar": 2025,
+      "basis": "1265 campagnes uit de Effie Case Library 2007-2023, effect van opname in de top drie contactpunten"
+    },
+    {
+      "id": "breed-targeten",
+      "onderwerp": "Breed targeten met emotionele reclame",
+      "waarde": "Bij campagnes van twee jaar of langer haalt breed targeten met hoge emotie 33 procent winstrapportage, smal targeten met hoge emotie 26 procent",
+      "uitleg": "Bij lage emotie haalt breed targeten 13 procent en smal targeten 0 procent. Smal is gedefinieerd als minder dan 20 procent van de markt.",
+      "bron": "The Creative Dividend, System1 en Effie",
+      "jaar": 2025,
+      "basis": "1265 campagnes uit de Effie Case Library, System1 Star Rating-kwartielen",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Aandeel campagnes dat winst rapporteert, na twee jaar",
+        "reeksen": [
+          {"naam": "Hoge emotie", "labels": ["Breed targeten", "Smal targeten"], "waarden": [33, 26]},
+          {"naam": "Lage emotie", "labels": ["Breed targeten", "Smal targeten"], "waarden": [13, 0]}
+        ],
+        "eenheid": "% van de campagnes"
+      }
+    },
+    {
+      "id": "entertainment-en-spend",
+      "onderwerp": "Entertainende reclame laat mediabudget harder werken",
+      "waarde": "Over alle budgetgroottes heen halen de meest entertainende campagnes een hoger aandeel marktaandeelgroei dan de minst entertainende",
+      "uitleg": "Het verschil blijft bestaan van kleine tot extra grote budgetten. Anders gezegd: creatieve kwaliteit is een mediavariabele, want ze verandert wat hetzelfde budget oplevert.",
+      "bron": "The Creative Dividend, System1 en Effie",
+      "jaar": 2025,
+      "basis": "1265 Effie-campagnes, kwartielen op Showmanship-kenmerken"
+    },
+    {
+      "id": "cost-of-dull-creative",
+      "onderwerp": "De kost van dull creatie",
+      "waarde": "189 miljard dollar in de VS en 13,29 miljard pond in het VK om alle dulle advertenties even effectief te maken als de niet-dulle",
+      "uitleg": "Alleen al de extreem dulle kwartiel kost 109 miljard dollar extra, meer dan de volledige jaarlijkse Amerikaanse tv-besteding. Gemodelleerd op een merk met 5 procent marktaandeel en 15 procent SOV, dus plus 10 ESOV.",
+      "bron": "System1, eatbigfish en Peter Field, The Extraordinary Cost of Dull",
+      "jaar": 2024,
+      "basis": "System1 Test Your Ad, meer dan 55.000 Amerikaanse tv-ads sinds 2017, spend uit Vivvix en Nielsen",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Extra besteding nodig om dulle advertenties te laten presteren als niet-dulle",
+        "reeksen": [
+          {"naam": "Extra besteding in miljard dollar", "labels": ["Niet dull", "Matig dull", "Zeer dull", "Extreem dull"], "waarden": [0, 21, 59, 109]}
+        ],
+        "eenheid": "miljard dollar per jaar"
+      }
+    },
+    {
+      "id": "neutraliteit",
+      "onderwerp": "Neutraliteit is de dominante reactie",
+      "waarde": "Gemiddeld 48 procent neutraliteit over 120.832 advertenties in vier markten",
+      "uitleg": "Per markt: VK 51 procent B2C en 60 procent B2B, VS 47 procent B2C en 54 procent B2B. Twee jaar na de eerste meting is het beeld nagenoeg onveranderd. Categorieen verschillen sterk, van 30 tot 57 procent, dus benchmark tegen de eigen competitieve set en niet tegen het marktgemiddelde.",
+      "bron": "System1, The Cure for Dull",
+      "jaar": 2026,
+      "basis": "120.832 advertenties in VK, VS, Frankrijk en Duitsland, 18,1 miljoen respondentbeoordelingen"
+    },
+    {
+      "id": "advertentielengte",
+      "onderwerp": "Emotie heeft tijd nodig",
+      "waarde": "Neutraliteit daalt van 44 procent bij 5 tot 20 seconden naar 36 procent bij 40 tot 60 seconden",
+      "uitleg": "Langere advertenties zijn gemiddeld minder dull. Dat pleit niet automatisch voor lang: het pleit voor formats die de tijd geven die de boodschap nodig heeft. Zie de botsing met de 20-secondendrempel in toetsstenen.md.",
+      "bron": "System1, The Cure for Dull",
+      "jaar": 2026,
+      "basis": "System1 Test Your Ad Competitive Edge, 120.832 advertenties",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "Neutraliteit per advertentielengte",
+        "reeksen": [
+          {"naam": "Neutraal", "labels": ["5-20 sec", "20-40 sec", "40-60 sec"], "waarden": [44, 42, 36]},
+          {"naam": "Positief", "labels": ["5-20 sec", "20-40 sec", "40-60 sec"], "waarden": [36, 36, 38]}
+        ],
+        "eenheid": "% van de respons"
+      }
+    },
+    {
+      "id": "lage-creativiteit-funnel",
+      "onderwerp": "Dull besmet de hele funnel",
+      "waarde": "Campagnes met ondergemiddelde creativiteit halen 48 procent minder klantenpenetratie en 43 procent minder merkoverweging",
+      "uitleg": "Verder: ad recall min 43 procent, marktaandeelgroei min 37 procent, merkbekendheid min 33 procent, merkvertrouwen min 22 procent, klanttevredenheid min 16 procent, koopintentie min 16 procent, klantenbehoud op lange termijn min 9 procent.",
+      "bron": "DMA Effectiveness Databank 2024, geciteerd in The Cure for Dull",
+      "jaar": 2026,
+      "basis": "Kans dat een campagne met ondergemiddelde creativiteit het effect haalt, tegenover gemiddeld",
+      "grafiek": {
+        "type": "staaf-horizontaal",
+        "titel": "Wat ondergemiddelde creativiteit kost per effect",
+        "reeksen": [
+          {"naam": "Verandering ten opzichte van gemiddeld", "labels": ["Klantenpenetratie", "Merkoverweging", "Ad recall", "Marktaandeelgroei", "Merkbekendheid", "Merkvertrouwen", "Klanttevredenheid", "Koopintentie", "Klantenbehoud"], "waarden": [-48, -43, -43, -37, -33, -22, -16, -16, -9]}
+        ],
+        "eenheid": "% verandering"
+      }
+    },
+    {
+      "id": "esov-x-ster",
+      "onderwerp": "Kwantiteit maal kwaliteit voorspelt marktaandeel",
+      "waarde": "ESOV gecombineerd met Star Rating correleert 0,81 met de daaropvolgende marktaandeelgroei",
+      "uitleg": "R kwadraat 0,65, p kleiner dan 0,00001. In een eerdere uitvoering van dezelfde analyse stond de correlatie op 0,69 met R kwadraat 0,48. Dit is het scherpste argument dat budget en creatie niet los van elkaar te plannen zijn.",
+      "bron": "System1, The Cure for Dull, en The Long and the Short (form) of It",
+      "jaar": 2026,
+      "basis": "264 merken in VS en VK, meer dan 4000 advertenties, meer dan 10 miljard dollar mediabesteding"
+    },
+    {
+      "id": "consistentie",
+      "onderwerp": "Consistentie vermenigvuldigt creativiteit",
+      "waarde": "De meest consistente merken halen een ROI van 8,8 tegenover 2,1 bij de minst consistente",
+      "uitleg": "Winstrapportage loopt van 6,1 procent naar 17,6 procent en de gemiddelde zakelijke effecten van 1,3 naar 2,5. Bij de minst consistente merken groeide geen enkel merk in distinctiveness.",
+      "bron": "The Creative Dividend, System1 en Effie",
+      "jaar": 2025,
+      "basis": "139 Amerikaanse en Britse merken, dertien consistentiekenmerken over vijf jaar, gematcht aan de Effie Case Library",
+      "grafiek": {
+        "type": "staaf",
+        "titel": "ROI per niveau van creatieve consistentie",
+        "reeksen": [
+          {"naam": "Gemiddelde ROI", "labels": ["Minst consistent", "Enigszins", "Zeer", "Meest consistent"], "waarden": [2.1, 2.2, 3.7, 8.8]}
+        ],
+        "eenheid": "per uitgegeven eenheid"
+      }
+    }
+  ],
+
+  "marktcontext": [
+    {
+      "id": "advertentiemarkt-groei",
+      "onderwerp": "De advertentiemarkt is losgekoppeld van de economie",
+      "waarde": "Sinds 2021 groeit de wereldwijde advertentiebesteding elk jaar 3 tot 6 procentpunt sneller dan de reele economie",
+      "uitleg": "Van 490,7 miljard dollar in 2013 naar een voorspelde 1403 miljard in 2027, meer dan een verdubbeling ten opzichte van 2020. Advertentiebesteding volgt nu bedrijfswinstgevendheid in plaats van bbp, en is daarmee eerder tegencyclisch geworden.",
+      "bron": "WARC Media, Global Ad Trends: Media's new normal",
+      "jaar": 2026,
+      "basis": "WARC-ramingen over 100 markten, 2025 tot 2027 zijn prognoses",
+      "grafiek": {
+        "type": "lijn",
+        "titel": "Wereldwijde advertentiebesteding",
+        "reeksen": [
+          {"naam": "Miljard dollar, lopende prijzen", "labels": ["2013", "2017", "2020", "2022", "2025 (p)", "2027 (p)"], "waarden": [490.7, 687.0, 887.5, 992.4, 1192.4, 1403.0]}
+        ],
+        "eenheid": "miljard dollar"
+      }
+    },
+    {
+      "id": "retail-media-aandeel",
+      "onderwerp": "Retail media",
+      "waarde": "Retail media nadert 20 procent van de wereldwijde advertentiebesteding",
+      "uitleg": "Handelsmarketingbudgetten zijn naar meetbare digitale omgevingen verhuisd, wat de verschuiving naar de onderkant van de funnel versnelt.",
+      "bron": "WARC Media, Global Ad Trends: Media's new normal",
+      "jaar": 2026,
+      "basis": "WARC-ramingen"
+    },
+    {
+      "id": "aandacht-verdunt",
+      "onderwerp": "Meer vertoningen, dunnere aandacht",
+      "waarde": "Marketeers kopen meer media en krijgen dunnere aandacht",
+      "uitleg": "De tijd die mensen aan media besteden bleef stabiel; wat veranderde is waar die tijd te gelde gemaakt wordt. Fragmentatie drijft de CPM's van premium media op en scherpt de afweging tussen schaal en betekenisvolle betrokkenheid.",
+      "bron": "WARC Media, Global Ad Trends: Media's new normal",
+      "jaar": 2026,
+      "basis": "WARC-analyse van mediaconsumptie tegenover mediabesteding"
+    },
+    {
+      "id": "llm-zichtbaarheid",
+      "onderwerp": "Merk-equity in taalmodellen",
+      "waarde": "63 procent van de zichtbaarheid in taalmodellen wordt verklaard door langetermijn-merk-equity",
+      "uitleg": "Daarna volgen marketingbesteding met 22 procent, citatievolume met 11 procent en influencer- en pr-bereik met 4 procent. Het bewijs is vroeg en hoogstens richtinggevend, maar het is de eerste harde aanwijzing dat merkopbouw ook de vindbaarheid in AI-antwoorden stuurt.",
+      "bron": "Charlie Oscar in de WARC Guide to brand building in the age of gen AI, geciteerd in The Multiplier Playbook",
+      "jaar": 2026,
+      "basis": "Zes categorieen",
+      "grafiek": {
+        "type": "staaf-horizontaal",
+        "titel": "Wat zichtbaarheid in taalmodellen stuurt",
+        "reeksen": [
+          {"naam": "Aandeel van de verklaring", "labels": ["Langetermijn-merk-equity", "Marketingbesteding", "Citatievolume", "Influencer en pr"], "waarden": [63, 22, 11, 4]}
+        ],
+        "eenheid": "%"
+      }
+    }
+  ],
+
+  "shortform": [
+    {
+      "id": "shortform-vormen",
+      "onderwerp": "Drie vormen in short-form video",
+      "waarde": "Creator led, brand native en brand traditional",
+      "uitleg": "Creator led is gemaakt door een maker voor een merk, brand native is door het merk gemaakt voor het platform, brand traditional is voor tv gemaakt en hergebruikt. Ze spelen elk een andere rol, dus je briefingt ze niet als een.",
+      "bron": "System1 en TikTok, The Long and the Short (form) of It",
+      "jaar": 2025,
+      "basis": "887 TikTok-advertenties in acht markten, 92.000-plus gebruikers, gekoppeld aan 350-plus brand- en conversion-liftstudies"
+    },
+    {
+      "id": "shortform-entertainment",
+      "onderwerp": "Entertainment doet in short-form het lange en het korte werk",
+      "waarde": "De meest entertainende short-form advertenties bouwen merk en converteren tegelijk; salesmanship verkoopt maar vaak ten koste van het merk",
+      "uitleg": "Vroege en distinctieve branding versterkt de effectiviteit zonder de aandacht te schaden, ook bij hoge frequentie. De eerste indruk is beslissend: frequentie kan een zwakke start versterken maar niet redden. De echte vijand van kortetermijnresultaat is onverschilligheid, niet afkeer.",
+      "bron": "System1 en TikTok, The Long and the Short (form) of It",
+      "jaar": 2025,
+      "basis": "887 advertenties gekoppeld aan in-markt liftstudies"
+    },
+    {
+      "id": "voluntary-attention",
+      "onderwerp": "Vrijwillige aandacht en de twintig-secondendrempel",
+      "waarde": "Vrijwillige aandacht is per seconde meer dan twee keer zo effectief als gedwongen blootstelling, en het merkopbouwvoordeel vlakt af na twintig seconden",
+      "uitleg": "Geluid draagt 20 tot 30 procent van de totale merkimpact. Groot hoeft in een digitale context dus niet lang te betekenen, mits de aandacht verdiend is.",
+      "bron": "Dentsu-studie 2026, geciteerd in Go Big or Go Home, IPA",
+      "jaar": 2026,
+      "basis": "Digitale video, vergelijking tussen skipbare en niet-skipbare blootstelling"
+    }
+  ]
+}

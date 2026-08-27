@@ -10,6 +10,12 @@ team gebruikt.
   strateeg tot de creatieve briefing staat. Werkt met de vier blokken, dwingt de flow Problem →
   Insight → Communication af en toetst de shift in wat de doelgroep gaat denken, doen en voelen. Daagt
   uit, schrijft niet in jouw plaats, en levert nooit de boodschap of het concept.
+- **Root Media Planner** is de mediastrateeg: van briefing naar mediavoorstel, KPI-raamwerk en de
+  duiding van aangeleverd onderzoek. Onderbouwt budget, kanaalrollen, bereik en aandacht op zes
+  mediapapers, en labelt elk cijfer op herkomst. Levert wel af, in tegenstelling tot de strategist,
+  maar bouwt het deck niet zelf.
+- **Root Presentation** bouwt het deck: van briefing, research of strategie naar een afgewerkt deck in
+  het Cartel-sjabloon. Vult het sjabloon in en ontwerpt nooit een slide van nul.
 - **Scout Setup** voegt een klant toe aan Root Scout, de learninglaag.
 
 ## Hoe zit dit in elkaar?
@@ -83,7 +89,7 @@ skill dubbel.
 
 > **Belangrijk:** deze marketplace is **niet openbaar** in Claude. Alleen wie de repo-link
 > `tomasmoesen/strat-toolkit` toevoegt, ziet de plugins. Zet de GitHub-repo op **privé** als je hem
-> enkel binnen het team wil houden — collega's hebben dan wel een GitHub-account met leesrechten op de
+> enkel binnen het team wil houden. Collega's hebben dan wel een GitHub-account met leesrechten op de
 > repo nodig. Let op: de voorbeeldrapporten en de skill kunnen klantgevoelige data bevatten.
 
 ---
@@ -118,7 +124,7 @@ Daarna, vanuit de map van deze repo:
 ```bash
 git init
 git add -A
-git commit -m "Cartel Strategy marketplace — Root Analyst v2"
+git commit -m "Cartel Strategy marketplace: Root Analyst v2"
 git branch -M main
 git remote add origin https://github.com/tomasmoesen/strat-toolkit.git
 git push -u origin main

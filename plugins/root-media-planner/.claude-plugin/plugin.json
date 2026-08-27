@@ -1,0 +1,8 @@
+{
+  "name": "root-media-planner",
+  "description": "De mediastrateeg van Cartel: van briefing naar mediavoorstel, KPI-raamwerk en de duiding van aangeleverd onderzoek. Onderbouwt budget, kanaalrollen, bereik en aandacht op zes mediapapers, labelt elk cijfer op herkomst, en levert de verhaallijn en de grafieken aan voor Root Presentation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tomas Moesen"
+  }
+}
