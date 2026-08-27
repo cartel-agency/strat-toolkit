@@ -1,7 +1,7 @@
 {
   "name": "scout-setup",
-  "description": "Voeg een nieuwe klant toe aan Root Scout via een kort interview: de skill vraagt klantnaam, sector, merkplatform, rationale voor cases en signalen, keywords, ontvangers en voedingsbodem, en zet die correct geformatteerd als één rij in de Notion-database Scout Config. Waarschuwt wanneer het Tavily-creditbudget niet volstaat of wanneer de zoekbronnen bijgesteld moeten worden voor een klant buiten food en retail.",
-  "version": "2.0.0",
+  "description": "Voeg een nieuwe klant toe aan Root Scout via een kort interview: de skill vraagt klantnaam, sector, merkplatform, rationale voor cases en signalen, keywords, markten, ontvangers en voedingsbodem, en zet die correct geformatteerd als één rij in de Notion-database Scout Config. Waarschuwt wanneer het Tavily-creditbudget niet volstaat of wanneer de zoekbronnen bijgesteld moeten worden voor een klant buiten food en retail.",
+  "version": "3.0.0",
   "author": {
     "name": "Tomas Moesen"
   }

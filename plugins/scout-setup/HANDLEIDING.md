@@ -53,19 +53,26 @@ Rechtstreeks in de rij in **Scout Config**, zonder skill en zonder code:
 De zoekbronnen zelf (globale zoekopdrachten en vakpers-feeds) en de rapport-opmaak zitten in de code
 (`config/config.yaml` en `src/report_template.py`). Die aanpassen loopt via GitHub Desktop.
 
-> **Twee kolommen die je kan negeren.** In Scout Config staan ook **Landen** en **Klantfiche**. Geen van
-> beide wordt vandaag door de code gelezen. De markten volgen uit de zoekopdrachten in `config.yaml`, en
-> merkcontext hoort in de body van de rij (zie hieronder), niet in een gekoppelde klantfiche.
+> **De kolom Landen.** Die filtert sinds 27 augustus 2026 op de markten die je aanvinkt: Belgie,
+> Nederland, Frankrijk, Duitsland, Italie. Let op twee dingen. Het is een filter op wat er al gevonden is,
+> geen extra zoekkracht, dus een markt aanvinken die niet in `config.yaml` doorzocht wordt levert niets
+> op. En bronnen zonder land (.com-sites zoals The Drum of Marketingdive) tellen als Internationaal en
+> komen er altijd door. Laat je de kolom leeg, dan wordt er niet gefilterd. De kolom **Klantfiche**
+> bestaat niet meer; merkcontext hoort in de body van de rij (zie hieronder).
 
 ## Let op het creditbudget
 
-De scout zoekt via Tavily, en dat kost credits. Het gratis plan geeft er **1000 per maand**. Eén actieve
-klant kost er ongeveer **530**, plus zo'n 30 per keywordterm. De volledige set zoekopdrachten wordt
-vandaag **per klant opnieuw** gedraaid, dus een tweede klant verdubbelt het verbruik.
+De scout zoekt via Tavily, en dat kost credits. Het gratis plan geeft er **1000 per maand**. Sinds
+27 augustus 2026 draaien de gedeelde zoekopdrachten **één keer per run** in plaats van per klant. De
+rekening ziet er nu zo uit:
 
-**Met twee actieve klanten loopt het budget dus leeg vóór het einde van de maand.** Dat gebeurt stil: de
-zoekopdrachten mislukken zonder foutmelding en het rapport wordt gewoon mager. Zet een tweede klant dus
-niet op Actief zonder dat daar eerst een oplossing voor gekozen is.
+- de gedeelde oogst: ongeveer **505 credits per maand**, ongeacht hoeveel klanten er actief zijn;
+- per klant: ongeveer **30 credits per maand per keywordterm**, dus zo'n 90 bij drie termen;
+- de strategist: ongeveer **50 credits per maand** aan extracts.
+
+**Vier tot vijf klanten met drie termen passen daarmee binnen het gratis plan.** Loopt het budget toch
+leeg, dan gebeurt dat stil: de zoekopdrachten mislukken zonder foutmelding en het rapport wordt mager,
+voor alle klanten tegelijk. Kijk bij twijfel in het Tavily-dashboard voor je een klant erbij zet.
 
 ## Nieuwe keywords: waar je op let
 
@@ -129,6 +136,6 @@ Het volledige merkdocument mag gerust bestaan, maar bewaar het ergens anders.
 
 > **Let op, twee plekken waar de tekst niet gelezen wordt.** Zet merkmateriaal niet op een **subpagina**
 > van de rij: subpagina's worden overgeslagen. En zet het ook niet enkel op de **klantfiche in de
-> Klanten-database**: die pagina wordt door geen enkel script uitgelezen, ook niet als je ze via de
-> kolom Klantfiche koppelt. Alleen de tekst in de body van de Scout Config-rij zelf telt, en niets
+> Klanten-database**: die pagina wordt door geen enkel script uitgelezen. Alleen de tekst in de body van
+> de Scout Config-rij zelf telt, en niets
 > waarschuwt je daarvoor.

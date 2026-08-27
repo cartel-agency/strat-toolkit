@@ -38,8 +38,8 @@
     {
       "name": "scout-setup",
       "source": "./plugins/scout-setup",
-      "description": "Voeg een nieuwe klant toe aan Root Scout via een kort interview: klantnaam, sector, merkplatform, rationale, keywords, landen en ontvangers, weggeschreven als één rij in de Notion-database Scout Config.",
-      "version": "1.0.0",
+      "description": "Voeg een nieuwe klant toe aan Root Scout via een kort interview: klantnaam, sector, merkplatform, rationale, keywords, markten en ontvangers, weggeschreven als één rij in de Notion-database Scout Config.",
+      "version": "3.0.0",
       "author": {
         "name": "Tomas Moesen"
       }

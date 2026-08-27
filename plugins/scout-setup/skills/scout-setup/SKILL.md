@@ -4,11 +4,11 @@ description: >
   Voeg een nieuwe klant toe aan Root Scout (de wekelijkse inspiratie-agent) door de gebruiker te
   interviewen en op basis daarvan één rij in de Notion-database Scout Config aan te maken: klantnaam,
   merkplatform, rationale voor cases én signalen (inclusief welke cijfers en onderzoeksbronnen
-  ertoe doen), keywords, ontvangers en voedingsbodem. De agent
+  ertoe doen), keywords, markten, ontvangers en voedingsbodem. De agent
   schrijft zelf niets naar de code; hij vult enkel Notion in, formatteert de invoer zo dat de scout en
   de strategist ermee kunnen werken, en signaleert wanneer het creditbudget of de zoekbronnen in
   config.yaml bijgesteld moeten worden.
-versie: v2 · 12 augustus 2026 · schrijft naar Scout Config in Notion · geen codewijzigingen
+versie: v3 · 27 augustus 2026 · schrijft naar Scout Config in Notion · geen codewijzigingen
 ---
 
 # Root Scout: setup nieuwe klant
@@ -197,6 +197,23 @@ en mediaschema's, en passages die een eerder punt herhalen.
   uitgelezen. Wil je context uit een klantfiche gebruiken, kopieer dan de relevante alinea's naar de body
   van de Scout Config-rij, ingekort tot het beoordelingskader.
 
+### De markten (kolom Landen)
+
+Vraag **in welke markten** deze klant wil meekijken: Belgie, Nederland, Frankrijk, Duitsland, Italie.
+Meerdere mogen. Vul die in de kolom `Landen`.
+
+Twee dingen die je erbij moet zeggen, want ze verrassen anders:
+
+- **Het is een filter, geen zoekopdracht.** De scout zoekt in alle markten die in `config.yaml` staan en
+  gooit daarna weg wat buiten de gekozen markten valt. Een markt aanvinken die daar niet doorzocht wordt,
+  levert dus niets extra op.
+- **Internationale bronnen komen er altijd door.** Een artikel van een .com-site (The Drum, LBBonline,
+  Marketingdive) telt als Internationaal en blijft, ook bij een klant die alleen Belgie volgt. Zonder die
+  uitzondering zou zo'n klant zijn beste bronnen kwijtspelen.
+
+Laat je de kolom leeg, dan wordt er **niet gefilterd** en komt alles binnen. Dat is een geldige keuze en
+de veiligste bij twijfel: liever te veel zien dan stil te weinig.
+
 ---
 
 ## 2. Toon de samenvatting en vraag bevestiging
@@ -214,17 +231,14 @@ gelden voor **alle** klanten samen:
 | Vast in `config.yaml` en de scripts | Gevolg voor deze klant |
 |---|---|
 | Welke bronnen en vakpersdomeinen doorzocht worden | De gedeelde oogst is op food en retail afgestemd |
-| De brede zoekopdrachten en de RSS-feeds | Alleen de keywords hierboven zijn klant-eigen |
+| De brede zoekopdrachten en de RSS-feeds | Alleen de keywords en de markten hierboven zijn klant-eigen |
 | Zoekvenster, vakpersdagen, plafonds per bron | Niet per klant bij te stellen |
 | Relevantiedrempel en signaaldrempel | Gelijk voor iedereen |
 | De scoreprompt, dus wat een case of signaal ís | Alleen te sturen via de rationale |
 | Verzendtijden, mailopmaak, huisstijl | Vast |
 
-**De rationale en de keywords zijn dus de enige echte stuurknoppen.** Besteed daar de tijd aan.
-
-Er staat in Scout Config nog een kolom **Landen** en een kolom **Klantfiche**. Vul die niet in en vraag er
-niet naar: geen van beide wordt door de code gelezen. De markten volgen uit de zoekopdrachten in
-`config.yaml`, en de voedingsbodem uit de body van de rij.
+**De rationale en de keywords zijn dus de belangrijkste stuurknoppen.** Besteed daar de tijd aan. De
+markten in `Landen` komen daarna: dat is een filter op wat er al gevonden is, geen extra zoekkracht.
 
 ---
 
@@ -252,21 +266,25 @@ rationale werken voor elke sector, maar de brede rondes en de vakpersfeeds zijn 
 Dit is de check die het vaakst vergeten wordt, en de gevolgen zijn stil. Loopt het Tavily-budget leeg,
 dan mislukken de zoekopdrachten zonder foutmelding en komt er gewoon een leeg of mager rapport.
 
-De scout draait vandaag **de volledige set zoekopdrachten opnieuw per klant**, niet enkel de keywords.
-Reken daarom met ongeveer:
+Sinds 27 augustus 2026 draait de scout **de gedeelde zoekrondes één keer per run**, hoe veel klanten er
+ook actief zijn. Alleen de eigen keywordronde is nog per klant. Reken daarom met:
 
-- **ruwweg 530 credits per maand per actieve klant**, plus zo'n 30 per keywordterm;
+- **ongeveer 505 credits per maand voor de gedeelde oogst**, één keer, ongeacht het aantal klanten;
+- **ongeveer 30 credits per maand per keywordterm**, dus zo'n 90 voor een klant met drie termen;
+- de strategist erbovenop, zo'n 50 per maand aan extracts;
 - een gratis Tavily-plan geeft **1000 credits per maand**.
 
-Dat betekent: **één klant past ruim, twee klanten passen er niet in.** Ga dus na hoeveel klanten er al op
-Actief staan en meld de uitkomst:
+Dat betekent: **vier tot vijf klanten met drie termen passen binnen het gratis plan.** Tel hoeveel
+klanten er al op Actief staan, tel deze erbij, en meld de uitkomst:
 
-- **Wordt dit de tweede of latere actieve klant?** Zeg dat het budget hiermee overschreden wordt, en dat
-  er eerst een beslissing nodig is: ofwel de gedeelde zoekrondes één keer per run laten draaien in plaats
-  van per klant (een codewijziging die de kosten per extra klant terugbrengt tot ongeveer 30 per term),
-  ofwel een groter Tavily-plan, ofwel klanten om beurten laten draaien. Bied aan om de rij alvast aan te
+- **Blijft de raming onder de 900?** Meld kort dat er ruimte is en ga door.
+- **Kom je erboven?** Zeg dat, en noem de drie uitwegen: minder keywordtermen bij deze of een andere
+  klant, een betalend Tavily-plan, of klanten om beurten laten draaien. Bied aan om de rij alvast aan te
   maken met **Actief uit**, zodat er niets stilletjes leegloopt.
-- **Is dit de eerste of de enige actieve klant?** Meld kort dat er ruimte is en ga door.
+
+**Waarom dit belangrijk blijft, ook nu het ruimer zit.** Loopt Tavily leeg, dan mislukken de
+zoekopdrachten zonder foutmelding: `zoek()` slaat de query over en gaat door. Je ziet geen crash, alleen
+een mager rapport, en niet enkel voor de nieuwe klant maar voor iedereen.
 
 ---
 
@@ -279,6 +297,7 @@ met de verzamelde waarden:
 - **Merkplatform** (tekst)
 - **Rationale** (tekst, met de secties KERN, OOK RELEVANT, NIET relevant en SIGNALEN)
 - **Keywords** (tekst, één term per regel, geen komma's)
+- **Landen** (multi-select: Belgie, Nederland, Frankrijk, Duitsland, Italie; leeg = geen filter)
 - **Ontvangers** (tekst, één adres per regel)
 - **Model** (select: leeg, `claude-sonnet-5` of `claude-haiku-4-5-20251001`)
 - **Actief** (checkbox)
@@ -317,7 +336,8 @@ Sluit af met een korte bevestiging, met de juiste tijden:
   niet dat van de persoon. Toon achteraf wat je ervan gemaakt hebt.
 - **Schrijf nooit naar de code.** Deze skill vult enkel Notion in. Bronnen of zoekopdrachten in
   `config.yaml` aanpassen gebeurt via de repo.
-- **Vraag niet naar Landen of Klantfiche.** Die kolommen worden niet gelezen.
+- **Vul Landen alleen in als de persoon de markten echt gekozen heeft.** Leeg betekent geen filter, en dat
+  is veiliger dan een gok. Vink nooit één markt aan omdat het merk daar toevallig vandaan komt.
 - **Sla de signaalvraag niet over.** Zonder die alinea werkt het tweede spoor van de poort niet.
 - **Actief pas aan als de rij compleet is én het budget klopt.** Een halve rij die al meedraait levert een
   zwak rapport op; een klant te veel laat het budget leeglopen voor iedereen.
