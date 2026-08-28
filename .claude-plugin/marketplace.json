@@ -2,7 +2,7 @@
   "name": "cartel-strategy",
   "owner": {
     "name": "Tomas Moesen",
-    "url": "https://github.com/tomasmoesen"
+    "url": "https://github.com/cartel-agency"
   },
   "metadata": {
     "description": "Interne marketplace van het Cartel-strategieteam. Bevat de Root Analyst research-agent, de Root Strategist sparringpartner, de Root Media Planner mediastrateeg, de Root Presentation deck-agent en de Scout Setup-skill voor Root Scout."
