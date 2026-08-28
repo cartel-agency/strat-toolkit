@@ -1,7 +1,7 @@
 {
   "name": "root-strategist",
   "description": "De sparringpartner van het strategieteam van Cartel. Spart over het inzicht, de strategie en de creatieve briefing, met het klantdossier en de methodologie uit Notion als context. Dwingt de flow Problem -> Insight -> Communication, toetst de vier blokken en bewaakt de shift in think/do/feel. Daagt uit, schrijft niet in jouw plaats.",
-  "version": "2.1.0",
+  "version": "3.1.0",
   "author": {
     "name": "Tomas Moesen"
   }

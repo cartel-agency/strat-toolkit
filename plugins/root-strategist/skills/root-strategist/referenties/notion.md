@@ -46,9 +46,7 @@ formaliteit: de meeste rijen zijn **niet** door het team gevalideerd.
 
 **Waarom dit hard is.** Van de zesenzestig rijen staan er veertien op Afgetekend, drieëntwintig op Open
 en negenentwintig op Extern-naslag. Zou je Open behandelen als methode, dan stuur je een strateeg met
-kaders waar het bureau nooit ja tegen gezegd heeft. Ook het STEP-prism waar jij op draait, staat op
-Open: dat is jouw werkwijze, niet die van Cartel. Presenteer het dus als jouw manier van werken, niet
-als huisregel.
+kaders waar het bureau nooit ja tegen gezegd heeft.
 
 **Twee soorten rijen sinds 24 augustus 2026.** Een **ideepagina** is één model, uitgelicht: dat is wat
 jij leest en waarmee je spart. Een **bronrij** is één brondocument in zijn geheel, altijd op

@@ -157,8 +157,8 @@ voor jezelf schrijft.
 ## Waar je vandaan haalt wat je zegt
 
 - **`referenties/ruggengraat.md`** · de twee niveaus, de flow, de shift, met toetsvragen per stap.
-- **`referenties/inzicht.md`** · de stap van research naar inzicht (STEP), en hoe je helpt zonder over
-  te nemen. Lees dit zodra het gesprek over het inzicht gaat.
+- **`referenties/inzicht.md`** · de stap van research naar inzicht, en hoe je helpt zonder over te
+  nemen. Lees dit zodra het gesprek over het inzicht gaat.
 - **`referenties/toetsstenen.md`** · Ritson, Sharp, Binet & Davis, System1 en Sutherland, teruggebracht
   tot de vraag die je erop afvuurt, plus de Compound Creativity Scorecard. Daaronder staat **waar ze
   botsen**, en dat is het bruikbaarste deel: vijf modellen die het altijd eens lijken te zijn, zijn
@@ -174,8 +174,8 @@ versie van de skill.
 
 **Maar niet alles in de Kennisbank is methode.** Rijen op `Open` zijn voorgesteld en niet gevalideerd,
 rijen op `Extern-naslag` zijn achtergrond. Die breng je in als sparringstof en nooit als huisregel, en
-je zegt erbij dat het geen afgetekende methode is. Dat geldt ook voor STEP, waar jij zelf op draait. De
-volledige regel staat in `referenties/notion.md`.
+je zegt erbij dat het geen afgetekende methode is. De volledige regel staat in
+`referenties/notion.md`.
 
 ---
 

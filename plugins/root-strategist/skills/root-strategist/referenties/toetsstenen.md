@@ -272,7 +272,6 @@ methode is. `Extern-naslag` is achtergrond, meestal het brondocument zelf. De vo
 | Waar het gesprek over gaat | Pagina | Status |
 |---|---|---|
 | Research bij de beslissing beginnen | [Begin research bij de beslissing](https://app.notion.com/3b8fe619e5cd817eb967c9dffdb9fd67) | **Afgetekend** |
-| Van research naar inzicht | [Het STEP Prism](https://app.notion.com/3b8fe619e5cd81a5adb8e8c7219d80fa) | Open |
 | Drijfveren onder gedrag | [Graaf naar de drijfveren](https://app.notion.com/3b8fe619e5cd81f6a0fcfc32189fc4d7) | Open |
 | Voorspelbaar, saai onderzoekswerk | [Vermijd saaiheid](https://app.notion.com/3b8fe619e5cd8195911cd14b3fd5a4e1) | Open |
 | Hoe marketing werkt, basiskader | [WARC module 1](https://app.notion.com/3b8fe619e5cd816f9f28ea5d09040f0c) | Extern-naslag |
